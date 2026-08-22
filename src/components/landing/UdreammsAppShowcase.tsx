@@ -1,7 +1,5 @@
 "use client";
 
-import { Smartphone } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { sendMetaEvent } from "@/lib/meta-events";
 
 export default function UdreammsAppShowcase() {
@@ -36,11 +34,21 @@ export default function UdreammsAppShowcase() {
                         Utilizada por miles de personas que buscan conexiones auténticas, honestas y duraderas
                     </p>
 
-                    <div className="relative">
-                        <Button onClick={() => sendMetaEvent('Lead', { source: 'MatchAppShowcase: Descargar' })} className="rounded-full bg-white text-black hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white font-medium px-12 py-8 text-xl shadow-2xl transition-all border-none flex items-center gap-3">
-                            <Smartphone className="w-6 h-6" />
-                            Descargar Match App
-                        </Button>
+                    {/* App Download Badges Image */}
+                    <div className="relative group cursor-pointer">
+                        <a
+                            href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => sendMetaEvent('Lead', { source: 'MatchAppShowcase: Descargar Apps Image' })}
+                            className="block"
+                        >
+                            <img
+                                src="/descarga en apps-remove-bg-io.png"
+                                alt="Descarga Match App en App Store y Google Play"
+                                className="w-64 sm:w-80 md:w-96 lg:w-[420px] h-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_10px_25px_rgba(255,255,255,0.15)]"
+                            />
+                        </a>
                         <span className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg border border-white/20 select-none animate-pulse">
                             Próximamente
                         </span>
