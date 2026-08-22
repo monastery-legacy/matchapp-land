@@ -37,7 +37,7 @@ const paths = [
       { text: "Sim Card & Móvil USA", icon: Smartphone, desc: "Conectividad total desde el día 1." },
       { text: "Apertura Cuenta Bancaria", icon: Building2, desc: "Gestión financiera local sin estrés." },
       { text: "Alojamiento & Vivienda Pro", icon: MapPin, desc: "Opciones seguras cerca de tu escuela." },
-      { text: "Comunidad Udreamms Plus", icon: Users, desc: "Networking y eventos exclusivos." }
+      { text: "Comunidad Match App Plus", icon: Users, desc: "Networking y eventos exclusivos." }
     ],
     href: "/instructions-payment-student",
     buttonText: "Solicitar visa ahora",

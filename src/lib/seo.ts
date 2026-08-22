@@ -49,62 +49,62 @@ const PAGE_SEO: Record<
     description: DEFAULT_DESCRIPTION,
   },
   "/about": {
-    title: "Acerca de Udreamms",
+    title: "Acerca de Match App",
     description:
-      "Conoce la historia, valores y equipo detrás de Udreamms. Transparencia y acompañamiento en tu proceso hacia Estados Unidos.",
+      "Conoce la historia, valores y equipo detrás de Match App. Transparencia y acompañamiento en tu experiencia.",
   },
   "/destinos": {
     title: "Destinos en USA",
     description:
-      "Explora ciudades y destinos populares para estudiar, trabajar y vivir en Estados Unidos con Udreamms.",
+      "Explora ciudades y destinos populares para estudiar, trabajar y vivir con Match App.",
   },
   "/courses": {
     title: "Cursos de Inglés en USA",
     description:
-      "Programas de inglés en escuelas aliadas en Estados Unidos. Planifica tu formación con asesoría Udreamms.",
+      "Programas de inglés en escuelas aliadas en Estados Unidos. Planifica tu formación con asesoría Match App.",
   },
   "/services": {
     title: "Servicios en USA",
     description:
-      "Vivienda, banca, SIM, transporte y más. Servicios esenciales para tu llegada a Estados Unidos.",
+      "Vivienda, banca, SIM, transporte y más. Servicios esenciales para tu llegada.",
   },
   "/brochures": {
     title: "Brochures y Guías",
     description:
-      "Descarga material informativo y da el primer paso en tu proceso con Udreamms.",
+      "Descarga material informativo y da el primer paso en tu proceso con Match App.",
   },
   "/contact": {
     title: "Contáctanos",
     description:
-      "Habla con el equipo Udreamms. Resolvemos dudas sobre visas, estudios y tu plan hacia USA.",
+      "Habla con el equipo Match App. Resolvemos dudas sobre visas, estudios y tu plan.",
   },
   "/partnerships": {
     title: "Alianzas Institucionales",
     description:
-      "Universidades y escuelas aliadas. Programas de partnership con Udreamms.",
+      "Universidades y escuelas aliadas. Programas de partnership con Match App.",
   },
   "/referrals": {
     title: "Programa de Referidos",
     description:
-      "Recomienda Udreamms y gana beneficios. Comparte tu experiencia con quienes sueñan con USA.",
+      "Recomienda Match App y gana beneficios. Comparte tu experiencia con nuestra comunidad.",
   },
   "/faqs": {
     title: "Preguntas Frecuentes",
     description:
-      "Respuestas sobre visas F-1, turismo B1/B2, pagos, procesos y soporte al estudiante.",
+      "Respuestas sobre visas, pagos, procesos y soporte.",
   },
   "/privacidad": {
     title: "Política de Privacidad",
-    description: "Política de privacidad y tratamiento de datos de Udreamms.",
+    description: "Política de privacidad y tratamiento de datos de Match App.",
   },
   "/terminos": {
     title: "Términos y Condiciones",
-    description: "Términos y condiciones de uso de los servicios Udreamms.",
+    description: "Términos y condiciones de uso de los servicios Match App.",
   },
   "/visas/student": {
     title: "Visa de Estudiante F-1",
     description:
-      "Planes y asesoría para visa de estudiante F-1. Estudia en USA con acompañamiento experto Udreamms.",
+      "Planes y asesoría para visa de estudiante F-1. Estudia en USA con acompañamiento experto Match App.",
   },
   "/visas/tourist": {
     title: "Visa de Turismo B1/B2",

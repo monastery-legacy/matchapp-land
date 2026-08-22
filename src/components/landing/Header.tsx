@@ -89,14 +89,14 @@ const menuData: MenuItemData[] = [
     label: "Comunidad",
     megaMenu: {
       title: "Nuestra Comunidad",
-      description: "Únete a la red Udreamms y aprovecha beneficios exclusivos.",
+      description: "Únete a la red Match App y aprovecha beneficios exclusivos.",
       actionText: "Unirme ahora",
       actionHref: "/contact",
       items: [
-        { title: "Udreamms App", desc: "Todo en tu bolsillo", href: "/portal", icon: LayoutGrid, colorClass: "text-pink-400 bg-pink-500/10" },
+        { title: "Match App", desc: "Todo en tu bolsillo", href: "/portal", icon: LayoutGrid, colorClass: "text-pink-400 bg-pink-500/10" },
         { title: "Referidos", desc: "Gana $50 por amigo", href: "/referrals", icon: Gift, colorClass: "text-emerald-400 bg-emerald-500/10" },
         { title: "Instituciones Educativas", desc: "Alianzas estratégicas", href: "/partnerships", icon: Building2, colorClass: "text-indigo-400 bg-indigo-500/10" },
-        { title: "Embajadores", desc: "Representa a Udreamms", href: "/contact", icon: Users, colorClass: "text-amber-400 bg-amber-500/10" },
+        { title: "Embajadores", desc: "Representa a Match App", href: "/contact", icon: Users, colorClass: "text-amber-400 bg-amber-500/10" },
       ],
       socials: [
         { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61593817282601", imgSrc: "/assets/f.jpg" },

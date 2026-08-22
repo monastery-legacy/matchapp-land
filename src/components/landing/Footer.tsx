@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           {/* Left Section */}
           <div className="md:col-span-1">
-            <p className="text-white text-2xl font-medium tracking-tight">Haciendo que Udreamms sea útil para todos</p>
+            <p className="text-white text-2xl font-medium tracking-tight">Haciendo que Match App sea útil para todos</p>
             <div className="mt-8">
-              <img src="/matchapp-logo-circular.png" alt="Udreamms Logo" className="w-16 h-16 object-cover rounded-full opacity-80 mb-4" />
+              <img src="/matchapp-logo-circular.png" alt="Match App Logo" className="w-16 h-16 object-cover rounded-full opacity-80 mb-4" />
               <p className="text-gray-500 text-sm">
                 Tu puente seguro a los Estados Unidos.
                 <br />
@@ -72,8 +72,8 @@ const Footer = () => {
               </li>
             </ul>
 
-            {/* Sobre Udreamms */}
-            <h4 className="font-medium mt-16 mb-3 text-sm text-slate-200">Sobre Udreamms</h4>
+            {/* Sobre Match App */}
+            <h4 className="font-medium mt-16 mb-3 text-sm text-slate-200">Sobre Match App</h4>
             <ul className="text-gray-400 space-y-2 text-sm mt-auto">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">Nuestra Historia</Link>
@@ -146,16 +146,16 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="items-center flex mt-20 flex-col md:flex-row gap-4">
-          <Link href="/" className="text-white text-lg font-medium hover:text-white transition-colors tracking-tight">Udreamms</Link>
+          <Link href="/" className="text-white text-lg font-medium hover:text-white transition-colors tracking-tight">Match App</Link>
           <div className="flex justify-center space-x-6 w-full flex-wrap">
-            <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs">Acerca de Udreamms</Link>
+            <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs">Acerca de Match App</Link>
             <Link href="/visas/student" className="text-gray-400 hover:text-white transition-colors text-xs">Visa Estudiante</Link>
             <Link href="/visas/tourist" className="text-gray-400 hover:text-white transition-colors text-xs">Visa Turismo</Link>
             <Link href="/privacidad" className="text-gray-400 hover:text-white transition-colors text-xs">Privacidad</Link>
             <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors text-xs">Términos</Link>
           </div>
           <div className="text-gray-600 text-[10px] w-full text-center md:text-right">
-            © {new Date().getFullYear()} Udreamms LLC. All rights reserved.
+            © {new Date().getFullYear()} Match App LLC. All rights reserved.
           </div>
         </div>
       </div>
