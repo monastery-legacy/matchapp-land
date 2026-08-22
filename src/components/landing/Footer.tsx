@@ -6,41 +6,48 @@ import { sendMetaEvent } from "@/lib/meta-events";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-24 pb-8">
-      <div className="container mx-auto px-4">
+    <footer className="bg-black text-white pt-20 pb-8 font-sans">
+      <div className="container mx-auto px-6 max-w-[1500px]">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
-          {/* Left Section */}
+          
+          {/* Left Section - Brand */}
           <div className="md:col-span-1">
-            <p className="text-white text-2xl font-medium tracking-tight">Haciendo que Match App sea útil para todos</p>
-            <div className="mt-8">
-              <img src="/matchapp-logo-circular.png" alt="Match App Logo" className="w-16 h-16 object-cover rounded-full opacity-80 mb-4" />
-              <p className="text-gray-500 text-sm">
-                Tu puente seguro a los Estados Unidos.
-                <br />
-                Visa, Estudios, Vida.
+            <p className="text-white text-2xl font-medium tracking-tight leading-snug">
+              Conectando personas de forma auténtica e honesta
+            </p>
+            <div className="mt-6">
+              <img src="/matchapp-logo-circular.png" alt="Match App Logo" className="w-16 h-16 object-cover rounded-full opacity-90 mb-4" />
+              <p className="text-gray-400 text-xs leading-relaxed">
+                Match App - La plataforma de citas y emparejamiento basada en honestidad, intereses compartidos e intercambio cultural.
               </p>
             </div>
           </div>
 
-          {/* Programas Educativos / Visas */}
-          <div className="mb-24">
-            <h4 className="font-medium mb-3 text-sm text-slate-200">Visas y Programas</h4>
-            <ul className="text-gray-400 space-y-2 text-sm mb-4">
+          {/* Column 1: Planes de Citas */}
+          <div>
+            <h4 className="font-medium mb-4 text-sm text-slate-200 uppercase tracking-wider">Planes de Citas</h4>
+            <ul className="text-gray-400 space-y-2.5 text-sm">
               <li>
-                <Link href="/visas/student" className="hover:text-white transition-colors">Visa de Estudiante (F-1)</Link>
+                <Link href="/#planes" className="hover:text-white transition-colors">Match Dating</Link>
               </li>
               <li>
-                <Link href="/visas/tourist" className="hover:text-white transition-colors">Visa de Turismo (B1/B2)</Link>
+                <Link href="/#planes" className="hover:text-white transition-colors">Match Dating Pro</Link>
               </li>
               <li>
-                <Link href="/courses" className="hover:text-white transition-colors">Cursos de Inglés</Link>
+                <Link href="/#faqs" className="hover:text-white transition-colors">Perfiles Verificados</Link>
+              </li>
+              <li>
+                <Link href="/#faqs" className="hover:text-white transition-colors">Algoritmo de Afinidades</Link>
               </li>
             </ul>
+          </div>
 
-            <h4 className="font-medium mt-16 mb-3 text-sm text-slate-200">Confianza y Legal</h4>
-            <ul className="text-gray-400 space-y-2 text-sm">
+          {/* Column 2: Confianza y Legal */}
+          <div>
+            <h4 className="font-medium mb-4 text-sm text-slate-200 uppercase tracking-wider">Confianza y Legal</h4>
+            <ul className="text-gray-400 space-y-2.5 text-sm">
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">Transparencia en Visas</Link>
+                <Link href="/about" className="hover:text-white transition-colors">Sobre Match App</Link>
               </li>
               <li>
                 <Link href="/privacidad" className="hover:text-white transition-colors">Política de Privacidad</Link>
@@ -49,91 +56,46 @@ const Footer = () => {
                 <Link href="/terminos" className="hover:text-white transition-colors">Términos y Condiciones</Link>
               </li>
               <li>
-                <Link href="/#faqs" className="hover:text-white transition-colors">Soporte al Estudiante</Link>
+                <Link href="/#faqs" className="hover:text-white transition-colors">Consejos de Citas Seguras</Link>
               </li>
             </ul>
           </div>
 
-          {/* Tu Vida en USA - CONECTADO A SERVICIOS */}
-          <div className="mb-24">
-            <h4 className="font-medium mb-3 text-sm text-slate-200">Ecosistema de Llegada</h4>
-            <ul className="text-gray-400 space-y-2 text-sm">
+          {/* Column 3: Comunidad y Soporte */}
+          <div>
+            <h4 className="font-medium mb-4 text-sm text-slate-200 uppercase tracking-wider">Comunidad y Soporte</h4>
+            <ul className="text-gray-400 space-y-2.5 text-sm">
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">Vivienda Segura</Link>
+                <Link href="/referrals" className="hover:text-white transition-colors">Programa de Referidos</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">Apertura de Cuenta Bancaria</Link>
+                <Link href="/contact" className="hover:text-white transition-colors">Contacto de Soporte</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">Sim Card y Móvil</Link>
+                <Link href="/portal" className="hover:text-white font-medium text-white transition-colors">Portal de Usuario</Link>
               </li>
-              <li>
-                <Link href="/services" className="hover:text-white transition-colors">Transporte y Aeropuerto</Link>
-              </li>
-            </ul>
-
-            {/* Sobre Match App */}
-            <h4 className="font-medium mt-16 mb-3 text-sm text-slate-200">Sobre Match App</h4>
-            <ul className="text-gray-400 space-y-2 text-sm mt-auto">
-              <li>
-                <Link href="/about" className="hover:text-white transition-colors">Nuestra Historia</Link>
-              </li>
-              <li>
-                <Link href="/referrals" className="hover:text-white transition-colors">Programa de Afiliados</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-white transition-colors">¡Estoy listo para empezar!</Link>
-              </li>
-              <li className="pt-4 flex flex-col gap-1.5 text-xs">
+              <li className="pt-3 flex flex-col gap-1 text-xs">
                 <span className="text-gray-400 block">
-                  📞 Fijo empresa:{' '}
-                  <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'Footer Fijo' })} className="text-blue-400 hover:underline">
-                    +1 650 784 5209
+                  💬 WhatsApp Soporte:{' '}
+                  <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'Footer WhatsApp' })} className="text-blue-400 hover:underline">
+                    Comunidad WhatsApp
                   </a>
                 </span>
-                <span className="text-gray-400 block">
-                  📞 Asesor humano:{' '}
-                  <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'Footer Asesor' })} className="text-blue-400 hover:underline">
-                    +1 385 416 2224
-                  </a>
-                </span>
-                <span className="text-gray-400 block">
-                  🤖 Bot información:{' '}
-                  <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'Footer Bot' })} className="text-blue-400 hover:underline">
-                    +1 385 888 2799
-                  </a>
-                </span>
-                <span className="text-gray-400 block mt-2">
+                <span className="text-gray-400 block mt-1">
                   ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=services@udreamms.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">services@udreamms.com</a>
                 </span>
-                <span className="text-gray-400 block">📍 Salt Lake City, Utah</span>
+                <span className="text-gray-400 block">📍 Salt Lake City, Utah, USA</span>
               </li>
             </ul>
           </div>
 
-          {/* Oportunidades y Destinos */}
+          {/* Column 4: Redes Sociales */}
           <div>
-            <h4 className="font-medium mb-3 text-sm text-slate-200">Comunidad</h4>
-            <ul className="text-gray-400 space-y-2 text-sm">
-              <li>
-                <Link href="/destinos" className="hover:text-white transition-colors">Destinos Top en USA</Link>
-              </li>
-              <li>
-                <Link href="/partnerships" className="hover:text-white transition-colors">Universidades Aliadas</Link>
-              </li>
-              <li>
-                <Link href="/#reviews" className="hover:text-white transition-colors">Testimonios Reales</Link>
-              </li>
-              <li>
-                <Link href="/portal" className="hover:text-white transition-colors font-medium text-white">Portal de Cliente</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Síguenos */}
-          <div>
-            <h4 className="font-medium mb-3 text-sm text-slate-200">Síguenos</h4>
-            <div className="flex flex-wrap gap-4">
+            <h4 className="font-medium mb-4 text-sm text-slate-200 uppercase tracking-wider">Síguenos</h4>
+            <p className="text-gray-400 text-xs mb-4">
+              Únete a nuestras comunidades oficiales en redes sociales.
+            </p>
+            <div className="flex flex-wrap gap-3">
               <a href="https://www.facebook.com/profile.php?id=61593817282601" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity"><Image src="/assets/f.jpg" alt="Facebook" width={32} height={32} style={{ height: 'auto' }} className="rounded-md" /></a>
               <a href="https://www.instagram.com/match_app_/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity"><Image src="/assets/i.jpg" alt="Instagram" width={32} height={32} style={{ height: 'auto' }} className="rounded-md" /></a>
               <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'Footer Social Icon' })} className="hover:opacity-80 transition-opacity"><Image src="/assets/w.jpg" alt="Whatsapp" width={32} height={32} style={{ height: 'auto' }} className="rounded-md" /></a>
@@ -145,17 +107,16 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="items-center flex mt-20 flex-col md:flex-row gap-4">
+        <div className="items-center flex mt-16 pt-8 border-t border-white/10 flex-col md:flex-row gap-4">
           <Link href="/" className="text-white text-lg font-medium hover:text-white transition-colors tracking-tight">Match App</Link>
           <div className="flex justify-center space-x-6 w-full flex-wrap">
             <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs">Acerca de Match App</Link>
-            <Link href="/visas/student" className="text-gray-400 hover:text-white transition-colors text-xs">Visa Estudiante</Link>
-            <Link href="/visas/tourist" className="text-gray-400 hover:text-white transition-colors text-xs">Visa Turismo</Link>
+            <Link href="/#planes" className="text-gray-400 hover:text-white transition-colors text-xs">Planes Match Dating</Link>
             <Link href="/privacidad" className="text-gray-400 hover:text-white transition-colors text-xs">Privacidad</Link>
-            <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors text-xs">Términos</Link>
+            <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors text-xs">Términos y Condiciones</Link>
           </div>
-          <div className="text-gray-600 text-[10px] w-full text-center md:text-right">
-            © {new Date().getFullYear()} Match App LLC. All rights reserved.
+          <div className="text-gray-500 text-xs w-full text-center md:text-right">
+            © {new Date().getFullYear()} Match App LLC. Todos los derechos reservados.
           </div>
         </div>
       </div>
