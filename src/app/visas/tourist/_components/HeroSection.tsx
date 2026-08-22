@@ -7,26 +7,17 @@ import { FadeIn } from "./Animations";
 import { sendMetaEvent } from "@/lib/meta-events";
 
 const videoLinks = [
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F1.mp4?alt=media&token=cc87cead-407d-4e4f-a643-6152d31eff1a",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F2.mp4?alt=media&token=da7a9e8f-b6c0-417a-9da6-dc8acc7a803f",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F3.mp4?alt=media&token=6b93ebfb-bff7-4fdd-b7f1-3a6f031dc7cd",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F4.mp4?alt=media&token=d43f4e35-bc28-40e0-b7db-3871c7b02d6a",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F5.mp4?alt=media&token=86eaddf6-c81d-477f-89b5-a8b2231d48dd",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F6.mp4?alt=media&token=276e7bbf-68ba-4cea-9218-ca2a07264974",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F7.mp4?alt=media&token=2635fd2d-9f24-4c54-a131-89161e9c503f",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F8.mp4?alt=media&token=0ac07147-6951-4a47-9e7a-f9d62a5c4c73",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F9.mp4?alt=media&token=bc0245ae-674a-429c-9f42-9d10ac01afe5",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F10.mp4?alt=media&token=4b2d3aff-79e1-4329-8b40-dbc0e94d32f2",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F11.mp4?alt=media&token=0586a415-4b0c-43d6-ab11-43fe62be8219",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F12.mp4?alt=media&token=e270d359-9f26-431a-a225-9048b1c15623",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F13.mp4?alt=media&token=53ddafbb-a7b0-419b-8c03-4312fed79fbc",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F14.mp4?alt=media&token=5fae2483-07a7-488e-ae3c-eca50662e59e",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F15.mp4?alt=media&token=97ba5129-e641-43ec-904c-9d748026bc4b",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F16.mp4?alt=media&token=691ecdde-3fab-4ee8-9519-edab33191b70",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F17.mp4?alt=media&token=54d31a5f-740b-4dc4-88da-1c9211e33a50",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F18.mp4?alt=media&token=00edcb39-3840-45fd-843b-c2df200236f9",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F19.mp4?alt=media&token=2be2fb6a-994d-481a-b595-40ab95f9bd6e",
-  "https://firebasestorage.googleapis.com/v0/b/udreamms-platform-1.firebasestorage.app/o/New%20version%2F20.mp4?alt=media&token=16c8c2bf-d460-4d38-bea0-f6e78e797f88"
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F6789235-uhd_4096_2160_25fps.mp4?alt=media&token=ce5c53ae-59a7-469a-8cbe-b44d333e7a84",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F6670592-uhd_4096_2160_25fps.mp4?alt=media&token=cb69e888-c607-4270-996e-31851a32a096",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F5102620-uhd_3840_2160_25fps.mp4?alt=media&token=bf00cbc7-a1ad-43f2-a1dd-a0a6d790bb44",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F4873444-hd_1920_1080_25fps.mp4?alt=media&token=9b8552bc-faa3-4235-9220-4a12e2459bc7",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F4873427-hd_1920_1080_25fps.mp4?alt=media&token=d9c93ac6-844a-4a5c-bdc6-c393a733a090",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F4752884-uhd_3840_2160_25fps.mp4?alt=media&token=3a8b4af4-9629-4c2a-bda8-a20780078243",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F4473066-uhd_3840_2160_25fps.mp4?alt=media&token=a83a5517-cf12-4fd3-be76-2d710f3675f3",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F15980593_3840_2160_30fps.mp4?alt=media&token=e2751d64-534e-48ac-b857-399e450db768",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F12488902_3840_2160_24fps.mp4?alt=media&token=45085b47-c933-4bd3-a47e-248ed130fc5e",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F10220214-uhd_4096_2160_25fps.mp4?alt=media&token=e56544bb-f856-41eb-b879-83ab9dc02159",
+  "https://firebasestorage.googleapis.com/v0/b/landluxor.firebasestorage.app/o/Matchapp%2F10212067-uhd_4096_2160_25fps.mp4?alt=media&token=401118b9-d2c9-46b5-bc5a-d31dbff58ef1"
 ];
 
 export default function HeroSection() {
@@ -175,7 +166,7 @@ export default function HeroSection() {
                             </motion.span>
                         </Button>
                         <a
-                            href="https://wa.me/13858882799?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+                            href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => sendMetaEvent('Lead', { source: 'Tourist Hero WhatsApp Button' })}

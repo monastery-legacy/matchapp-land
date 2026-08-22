@@ -61,7 +61,7 @@ export default function QuizSection() {
                             <p className="text-slate-600 mb-8">Reserva tu plan antes de que se agoten los últimos cupos.</p>
 
                             <a
-                                href="https://wa.me/13858882799?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+                                href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full bg-[#25D366] hover:bg-[#20bd5a] h-14 text-lg rounded-xl text-white shadow-lg shadow-green-500/20 transform transition hover:scale-[1.02] flex items-center justify-center gap-2 font-medium"

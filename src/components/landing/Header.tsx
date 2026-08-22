@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 import {
   Menu, X, ChevronDown, Lock, GraduationCap, Plane, Home as HomeIcon,
   Briefcase, Globe, CreditCard, Car, Smartphone, FileText, Heart,
-  ArrowRight, Star, Gift, Building2, Book, ShieldCheck, Map, LayoutGrid, Users, Trophy
+  ArrowRight, Star, Gift, Building2, Book, ShieldCheck, Map, LayoutGrid, Users, Trophy,
+  Sparkles, Compass
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -43,15 +44,44 @@ type MenuItemData = {
 // --- DATA DEL MENÚ ---
 const menuData: MenuItemData[] = [
   {
-    label: "Visas",
+    label: "Descubrir",
+    href: "/#descubrir",
     megaMenu: {
-      title: "Tu camino a USA",
-      description: "Asesoría experta para cada tipo de viajero.",
-      actionText: "Evaluar mi perfil",
-      actionHref: "/#quiz", // Placeholder for smart quiz link
+      title: "Descubrir Match Dating",
+      description: "Información sobre cómo funciona la plataforma y el algoritmo de emparejamiento.",
+      actionText: "Conocer más",
+      actionHref: "/#descubrir",
       items: [
-        { title: "Visa de Estudiante", desc: "F-1: Estudia y vive en USA", href: "/visas/student", icon: GraduationCap, colorClass: "text-blue-400 bg-blue-500/10" },
-        { title: "Visa de Turismo", desc: "B1/B2: Viaja sin preocupaciones", href: "/visas/tourist", icon: Plane, colorClass: "text-sky-400 bg-sky-500/10" }
+        { title: "Algoritmo de emparejamiento", desc: "Compatibilidad inteligente basada en afinidades e intereses reales", href: "/#descubrir", icon: Sparkles, colorClass: "text-[#9b4dca] bg-[#9b4dca]/10" },
+        { title: "Cómo funciona la plataforma", desc: "Paso a paso para crear tu perfil y encontrar coincidencias", href: "/#descubrir", icon: Compass, colorClass: "text-pink-400 bg-pink-500/10" }
+      ]
+    }
+  },
+  {
+    label: "Historias de éxito",
+    href: "/#historias",
+    megaMenu: {
+      title: "Historias de Éxito",
+      description: "Testimonios y casos reales para transmitir confianza.",
+      actionText: "Ver testimonios",
+      actionHref: "/#historias",
+      items: [
+        { title: "Testimonios reales", desc: "Conoce a parejas que se encontraron en nuestra plataforma", href: "/#historias", icon: Heart, colorClass: "text-rose-400 bg-rose-500/10" },
+        { title: "Casos de éxito", desc: "Experiencias verídicas de nuestra comunidad", href: "/#historias", icon: Trophy, colorClass: "text-amber-400 bg-amber-500/10" }
+      ]
+    }
+  },
+  {
+    label: "Seguridad",
+    href: "/#seguridad",
+    megaMenu: {
+      title: "Seguridad en Citas",
+      description: "Consejos de citas seguras y políticas de verificación de perfiles.",
+      actionText: "Ver políticas",
+      actionHref: "/#seguridad",
+      items: [
+        { title: "Verificación de perfiles", desc: "Identidades autenticadas para una comunidad 100% real y confiable", href: "/#seguridad", icon: ShieldCheck, colorClass: "text-emerald-400 bg-emerald-500/10" },
+        { title: "Consejos de citas seguras", desc: "Recomendaciones y mejores prácticas para tus encuentros", href: "/#seguridad", icon: Lock, colorClass: "text-blue-400 bg-blue-500/10" }
       ]
     }
   },
@@ -69,17 +99,16 @@ const menuData: MenuItemData[] = [
         { title: "Embajadores", desc: "Representa a Udreamms", href: "/contact", icon: Users, colorClass: "text-amber-400 bg-amber-500/10" },
       ],
       socials: [
-        { label: "Facebook", href: "https://www.facebook.com/udreamms/", imgSrc: "/assets/f.jpg" },
-        { label: "Instagram", href: "https://www.instagram.com/udreamms/", imgSrc: "/assets/i.jpg" },
-        { label: "WhatsApp", href: "https://wa.me/13858882799?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n", imgSrc: "/assets/w.jpg" },
-        { label: "X", href: "https://x.com/udreamms", imgSrc: "/assets/x.jpg" },
-        { label: "YouTube", href: "https://www.youtube.com/@udreamms", imgSrc: "/assets/y.jpg" },
-        { label: "TikTok", href: "https://www.tiktok.com/@udreamms", imgSrc: "/assets/t.jpg" },
+        { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61593817282601", imgSrc: "/assets/f.jpg" },
+        { label: "Instagram", href: "https://www.instagram.com/match_app_/", imgSrc: "/assets/i.jpg" },
+        { label: "WhatsApp", href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24", imgSrc: "/assets/w.jpg" },
+        { label: "X", href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24", imgSrc: "/assets/x.jpg" },
+        { label: "YouTube", href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24", imgSrc: "/assets/y.jpg" },
+        { label: "TikTok", href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24", imgSrc: "/assets/t.jpg" },
       ]
     }
   },
   { label: "FAQs", href: "/#faqs" },
-  { label: "¡Estoy listo para empezar!", href: "/contact" },
   { label: "LUXOR", href: "/luxor" },
 ];
 

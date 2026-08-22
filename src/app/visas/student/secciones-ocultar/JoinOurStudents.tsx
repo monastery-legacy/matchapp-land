@@ -177,7 +177,7 @@ export default function JoinOurStudents() {
         <div className="flex justify-center">
           <Button
             className="rounded-full bg-slate-900 hover:bg-black text-white font-medium px-10 py-6 text-lg shadow-xl transition-all hover:scale-105 flex items-center gap-2"
-            onClick={() => window.open('https://instagram.com/udreamms', '_blank')}
+            onClick={() => window.open('https://www.instagram.com/match_app_/', '_blank')}
           >
             Ver más en Instagram
             <Instagram className="w-5 h-5" />

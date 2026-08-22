@@ -10,10 +10,10 @@ export default function OrganizationJsonLd() {
     url: SITE_URL,
     logo: LOGO_URL,
     sameAs: [
-      "https://www.facebook.com/udreamms/",
-      "https://www.instagram.com/udreamms/",
-      "https://www.youtube.com/@udreamms",
-      "https://x.com/udreamms",
+      "https://www.facebook.com/profile.php?id=61593817282601",
+      "https://www.instagram.com/match_app_/",
+      "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24",
+      "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24",
     ],
   };
 

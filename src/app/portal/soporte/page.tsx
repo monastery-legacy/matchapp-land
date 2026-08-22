@@ -24,7 +24,7 @@ export default function SoportePage() {
           </div>
 
           <a 
-            href="https://wa.me/13854162224?text=Hola%2C%20necesito%20soporte%20con%20mi%20portal%20Udreamms" 
+            href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full inline-flex h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] text-white text-xs font-normal tracking-widest uppercase items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"

@@ -40,7 +40,7 @@ export default function Home() {
           
           <div className="w-full flex justify-center px-6">
             <a 
-              href="https://wa.me/13858882799?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" 
+              href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" 
               target="_blank" 
               rel="noopener noreferrer" 
               onClick={() => sendMetaEvent('Lead', { source: 'Home Page WhatsApp Button' })}

@@ -232,7 +232,7 @@ export default function JoinOurStudents() {
         <div className="flex justify-center">
           <Button
             className="rounded-full bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-medium px-8 py-5 text-base shadow-xl shadow-orange-500/20 transition-all hover:scale-105 flex items-center gap-2"
-            onClick={() => window.open('https://www.instagram.com/_udreamms/', '_blank')}
+            onClick={() => window.open('https://www.instagram.com/match_app_/', '_blank')}
           >
             Ver más en Instagram
             <Instagram className="w-5 h-5" />

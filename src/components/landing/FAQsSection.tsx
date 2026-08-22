@@ -208,7 +208,7 @@ export default function FAQsSection() {
           </p>
           
           <a
-            href="https://wa.me/13858882799?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+            href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-auto px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium text-xs md:text-sm hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 transition-all duration-300"

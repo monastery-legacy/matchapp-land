@@ -112,7 +112,7 @@ export default function VideoTestimonials() {
 
                             <div className="absolute bottom-0 left-0 right-0 p-8 flex flex-col gap-2">
                                 <a
-                                    href="https://www.instagram.com/udreamms/"
+                                    href="https://www.instagram.com/match_app_/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-2 text-white font-medium hover:text-pink-400 transition-colors"
@@ -130,7 +130,7 @@ export default function VideoTestimonials() {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="https://www.instagram.com/udreamms/"
+                        href="https://www.instagram.com/match_app_/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-medium py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"

@@ -26,7 +26,7 @@ export default function YouTubeStoryCards({
   heading,
   subheading,
   theme = "light",
-  instagramHref = "https://www.instagram.com/_udreamms/",
+  instagramHref = "https://www.instagram.com/match_app_/",
 }: YouTubeStoryCardsProps) {
   const isTouch = useTouchDevice();
   const [activeId, setActiveId] = useState<number | null>(null);
