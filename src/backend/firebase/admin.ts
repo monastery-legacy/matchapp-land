@@ -33,11 +33,11 @@ if (!admin.apps.length) {
                 });
                 console.log('Firebase Admin initialized with local serviceAccountKey.json');
             } else {
-                throw new Error('Firebase credentials not found. Set FIREBASE_PRIVATE_KEY, FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL env vars, or provide serviceAccountKey.json locally.');
+                console.warn('Firebase Admin: No credentials provided yet. Backend features requiring Admin SDK will stay dormant.');
             }
         }
     } catch (error) {
-        console.error('Failed to initialize Firebase Admin:', error);
+        console.warn('Firebase Admin initialization skipped:', error);
     }
 }
 
