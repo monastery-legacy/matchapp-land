@@ -34,25 +34,20 @@ export default function UdreammsAppShowcase() {
                         Utilizada por miles de personas que buscan conexiones auténticas, honestas y duraderas
                     </p>
 
-                    {/* App Download Badges Image */}
-                    <div className="relative group cursor-pointer">
-                        <a
-                            href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => sendMetaEvent('Lead', { source: 'MatchAppShowcase: Descargar Apps Image' })}
-                            className="block"
-                        >
-                            <img
-                                src="/5297951-7905525-Photoroom.png"
-                                alt="Descarga Match App en App Store y Google Play"
-                                className="w-64 sm:w-80 md:w-96 lg:w-[450px] h-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_10px_25px_rgba(255,255,255,0.15)]"
-                            />
-                        </a>
-                        <span className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg border border-white/20 select-none animate-pulse">
-                            Próximamente
-                        </span>
-                    </div>
+                    {/* Clean Image Only */}
+                    <a
+                        href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => sendMetaEvent('Lead', { source: 'MatchAppShowcase: Descargar Apps Image' })}
+                        className="inline-block"
+                    >
+                        <img
+                            src="/5297951-7905525-Photoroom.png"
+                            alt="Descarga Match App"
+                            className="w-64 sm:w-80 md:w-96 lg:w-[480px] h-auto object-contain transition-transform duration-300 hover:scale-105"
+                        />
+                    </a>
                 </div>
             </div>
         </section>
