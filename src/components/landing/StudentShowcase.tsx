@@ -12,11 +12,11 @@ const STUDENT_SHOWCASE_POSTER = "/assets/generated/student_showcase_campus.png";
 export default function StudentShowcase() {
   return (
     <section className="py-12 md:py-16 lg:py-20 bg-white text-black overflow-hidden font-sans">
-      <div className="container mx-auto px-6 max-w-[1500px]">
-        <div className="flex flex-col lg:flex-row-reverse gap-6 lg:gap-24 items-center lg:items-center">
-          <div className="w-full lg:w-[35%] flex flex-col pt-2 lg:pt-10 pl-0 lg:pl-8">
+      <div className="container mx-auto px-6 max-w-[1600px]">
+        <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-16 items-center lg:items-center">
+          <div className="w-full lg:w-[30%] flex flex-col pt-2 lg:pt-4 pl-0 lg:pl-4">
             <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-              <span className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl block mb-2">
+              <span className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl block mb-2 font-medium">
                 Match Dating
               </span>
               <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">
@@ -48,13 +48,13 @@ export default function StudentShowcase() {
             </div>
           </div>
 
-          <div className="w-full lg:w-2/3 relative h-[280px] sm:h-[350px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="w-full lg:w-[70%] relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
             <InlineYouTubeFeature
               videoId={STUDENT_SHOWCASE_VIDEO_ID}
               startSeconds={STUDENT_SHOWCASE_START_SECONDS}
               posterSrc={STUDENT_SHOWCASE_POSTER}
               posterAlt="Match Dating - Conexiones Auténticas"
-              className="rounded-3xl"
+              className="rounded-3xl w-full h-full"
             />
           </div>
         </div>

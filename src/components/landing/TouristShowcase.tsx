@@ -11,13 +11,13 @@ export default function TouristShowcase() {
 
     return (
         <section className="py-12 md:py-16 lg:py-20 bg-white text-black overflow-hidden font-sans">
-            <div className="container mx-auto px-6 max-w-[1500px]">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-24 items-center lg:items-center">
+            <div className="container mx-auto px-6 max-w-[1600px]">
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center lg:items-center">
                     
                     {/* Left Column: Text */}
-                    <div className="w-full lg:w-[35%] flex flex-col pt-2 lg:pt-10 pr-0 lg:pr-8">
+                    <div className="w-full lg:w-[30%] flex flex-col pt-2 lg:pt-4 pr-0 lg:pr-4">
                         <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-                            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2">Match Dating Pro</span>
+                            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2 font-medium">Match Dating Pro</span>
                             <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Conexiones internacionales & intercambio cultural</span>
                         </h2>
                         <p className="text-gray-600 text-base leading-[1.7] font-light">
@@ -34,13 +34,13 @@ export default function TouristShowcase() {
                     </div>
 
                     {/* Right Column: Video/Media */}
-                    <div ref={ref} className="w-full lg:w-2/3 relative h-[280px] sm:h-[350px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
+                    <div ref={ref} className="w-full lg:w-[70%] relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
                         <InlineYouTubeFeature
                             videoId="9NEnvqghAAo"
                             startSeconds={2040}
                             posterSrc="/assets/generated/tourist_showcase_disney.png"
                             posterAlt="Match Dating Pro - Conexiones Internacionales"
-                            className="rounded-3xl"
+                            className="rounded-3xl w-full h-full"
                         />
                     </div>
 
