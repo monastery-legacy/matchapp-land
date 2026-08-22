@@ -5,8 +5,8 @@ import { sendMetaEvent } from "@/lib/meta-events";
 import { Button } from "@/components/ui/button";
 import InlineYouTubeFeature from "@/components/landing/InlineYouTubeFeature";
 
-const STUDENT_SHOWCASE_VIDEO_ID = "t-tP6hhtCO4";
-const STUDENT_SHOWCASE_START_SECONDS = 72;
+const STUDENT_SHOWCASE_VIDEO_ID = "rLGS2ecW1Rw";
+const STUDENT_SHOWCASE_START_SECONDS = 1530;
 const STUDENT_SHOWCASE_POSTER = "/assets/generated/student_showcase_campus.png";
 
 export default function StudentShowcase() {
