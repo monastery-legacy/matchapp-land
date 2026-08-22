@@ -44,9 +44,9 @@ export default function UdreammsAppShowcase() {
                             className="block"
                         >
                             <img
-                                src="/descarga en apps-remove-bg-io.png"
+                                src="/5297951-7905525-Photoroom.png"
                                 alt="Descarga Match App en App Store y Google Play"
-                                className="w-64 sm:w-80 md:w-96 lg:w-[420px] h-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_10px_25px_rgba(255,255,255,0.15)]"
+                                className="w-64 sm:w-80 md:w-96 lg:w-[450px] h-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_10px_25px_rgba(255,255,255,0.15)]"
                             />
                         </a>
                         <span className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg border border-white/20 select-none animate-pulse">
