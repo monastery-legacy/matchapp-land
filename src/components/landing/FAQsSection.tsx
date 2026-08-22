@@ -12,83 +12,47 @@ const categories = [
     faqs: [
       {
         question: "¿Qué es Match App?",
-        answer: "Match App es un ecosistema creado para ayudar a las personas a conectar y encontrar su pareja ideal, acompañándolas con un algoritmo inteligente de emparejamiento y verificación de perfiles. Brinda guías, recursos y herramientas prácticas para facilitar la integración y empoderar a cada persona a construir relaciones auténticas."
+        answer: "Match App es una plataforma de citas y emparejamiento diseñada para conectar personas que buscan relaciones honestas, auténticas y significativas. Combinamos un algoritmo de compatibilidad inteligente con verificación de perfiles y acompañamiento constante."
+      },
+      {
+        question: "¿Cómo funciona el algoritmo de emparejamiento?",
+        answer: "Nuestro algoritmo analiza tus valores, aficiones, estilo de vida y metas personales para sugerirte personas verdaderamente afines. Priorizamos la compatibilidad real sobre las coincidencias superficiales."
+      },
+      {
+        question: "¿Qué diferencia hay entre el plan Match Dating y Match Dating Pro?",
+        answer: "El plan Match Dating incluye la creación de perfil 360°, algoritmo básico por intereses, chat directo y me gustas diarios. El plan Match Dating Pro desbloquea interacciones ilimitadas, ver a quién le gustas antes de hacer match, filtros avanzados de valores y estilo de vida, boost semanal de visibilidad y modo incógnito."
       },
       {
         question: "¿Por dónde empiezo?",
-        answer: "Empiezas creando tu perfil en Match App. La plataforma te guía paso a paso para completar tus intereses y preferencias, para que sepas exactamente cómo avanzar de forma clara hacia tu objetivo de conectar con personas afines a ti."
-      },
-      {
-        question: "¿Quién es la persona ideal para vivir esta experiencia?",
-        answer: "La persona correcta para Match App es quien busca relaciones genuinas y auténticas, y necesita una plataforma segura para conectar. Es ideal para quienes quieren hacerlo de forma organizada, con acompañamiento y verificación en cada etapa."
-      },
-      {
-        question: "¿Qué es Luxor y cómo me beneficia?",
-        answer: "Luxor es una moneda digital creada para la comunidad de Match App, diseñada para que puedan acceder a beneficios exclusivos dentro de la plataforma. Al iniciar el proceso, cada usuario recibe 100 monedas como bienvenida, las cuales pueden utilizarse para acceder a diferentes servicios y herramientas."
+        answer: "Empiezas seleccionando tu plan (Match Dating o Match Dating Pro) y completando tu perfil con honestidad sobre tus gustos e intereses para empezar a conectar de inmediato."
       }
     ]
   },
   {
-    id: "visa",
-    title: "Proceso de Visa",
+    id: "compatibility",
+    title: "Compatibilidad e Intereses",
     faqs: [
       {
-        question: "¿Qué tipo de visa necesito para estudiar en USA?",
-        answer: "Necesitas una visa F-1 para estudios académicos. Te ayudamos con todo el proceso de solicitud y preparación para la entrevista."
+        question: "¿Cómo se evalúa la afinidad entre usuarios?",
+        answer: "Mediante un test de personalidad e intereses donde defines tus pasiones, hábitos y visión de vida. Así garantizamos conversaciones fluidas e interés mutuo desde el primer mensaje."
       },
       {
-        question: "¿Cuánto tiempo toma obtener la visa?",
-        answer: "El proceso generalmente toma de 4 a 8 semanas desde la solicitud hasta la entrevista. Te recomendamos aplicar al menos 3 meses antes."
-      },
-      {
-        question: "¿Qué documentos necesito para la visa?",
-        answer: "Necesitas: formulario I-20, pasaporte válido, comprobante de pago SEVIS, fotos, y comprobante de fondos financieros."
-      },
-      {
-        question: "¿Puedo trabajar con visa de estudiante?",
-        answer: "Sí, puedes trabajar hasta 20 horas semanales en el campus durante el semestre y tiempo completo en vacaciones."
+        question: "¿Puedo conectar con personas de otros países?",
+        answer: "¡Por supuesto! Match App fomenta el intercambio cultural y las citas internacionales. Puedes conocer la cultura, costumbres y formas de vivir de personas de distintos países."
       }
     ]
   },
   {
-    id: "programs",
-    title: "Programas",
+    id: "safety",
+    title: "Seguridad y Verificación",
     faqs: [
       {
-        question: "¿Cuánto dura el programa de inglés?",
-        answer: "Los programas varían de 12 a 52 semanas dependiendo de tus objetivos. Ofrecemos desde cursos cortos hasta programas académicos."
+        question: "¿Cómo garantizan la seguridad y la honestidad en los perfiles?",
+        answer: "Cada usuario pasa por un proceso de verificación de identidad de foto y teléfono. Además, nuestro equipo de moderación supervisa continuamente la comunidad para mantener un ambiente seguro y libre de perfiles falsos."
       },
       {
-        question: "¿Qué nivel de inglés necesito para empezar?",
-        answer: "Nuestros programas aceptan desde nivel principiante hasta avanzado. Realizamos una prueba de nivelación al inicio."
-      }
-    ]
-  },
-  {
-    id: "destinations",
-    title: "Destinos",
-    faqs: [
-      {
-        question: "¿En qué ciudades tienen programas?",
-        answer: "Tenemos programas en New York, Los Angeles, Miami, Orlando, Boston, San Francisco, y más de 20 ciudades."
-      },
-      {
-        question: "¿Cómo elijo la mejor ciudad para mí?",
-        answer: "Te ayudamos a elegir basándonos en tus intereses, presupuesto, clima preferido y oportunidades profesionales."
-      }
-    ]
-  },
-  {
-    id: "housing",
-    title: "Vivienda",
-    faqs: [
-      {
-        question: "¿Ayudan con el alojamiento?",
-        answer: "Sí, te ayudamos a encontrar opciones de homestay, residencias estudiantiles o apartamentos compartidos cerca de tu escuela."
-      },
-      {
-        question: "¿El alojamiento incluye comidas?",
-        answer: "Generalmente no, a menos que sea un homestay con plan de alimentación específico."
+        question: "¿Mis datos personales están protegidos?",
+        answer: "Absolutamente. Tus datos están encriptados y solo compartimos lo que tú decides hacer público en tu perfil. Puedes usar el modo incógnito en el plan Pro si deseas mayor privacidad."
       }
     ]
   }
@@ -117,10 +81,10 @@ export default function FAQsSection() {
         <div className="mb-16 text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-4 text-white">
             Tus dudas resueltas <br className="hidden md:inline" />
-            <span className="text-gray-400">de forma directa</span>
+            <span className="text-gray-400">de forma transparente</span>
           </h2>
           <p className="text-lg text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
-            Encuentra claridad sobre visas, alojamiento y procesos académicos. Transparencia total desde el primer momento.
+            Encuentra claridad sobre nuestros planes, perfiles verificados y proceso de coincidencia. Honestidad total desde el primer momento.
           </p>
         </div>
 
@@ -200,11 +164,11 @@ export default function FAQsSection() {
           </AnimatePresence>
         </div>
 
-        {/* WhatsApp CTA Dudas - Sin contenedor (Estilo Nota) */}
+        {/* WhatsApp CTA Dudas */}
         <div className="mt-16 text-center max-w-xl mx-auto flex flex-col items-center">
           <p className="text-gray-400 text-xs md:text-sm mb-6 leading-relaxed">
-            <span className="font-semibold text-white block mb-1 text-sm md:text-base">¿Aún tienes dudas?</span>
-            Si no encontraste lo que buscabas, nuestro equipo de soporte está disponible para atenderte personalmente en cualquier momento.
+            <span className="font-semibold text-white block mb-1 text-sm md:text-base">¿Aún tienes preguntas?</span>
+            Si quieres hablar con nuestro equipo de matchmaking o tienes dudas sobre los planes, estamos listos para atenderte por WhatsApp.
           </p>
           
           <a

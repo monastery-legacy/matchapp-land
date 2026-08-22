@@ -3,100 +3,85 @@
 import { motion } from "framer-motion";
 import {
   FileCheck,
-  GraduationCap,
-  Plane,
-  Smartphone,
-  ArrowRight,
+  Heart,
+  MessageSquare,
+  Sparkles,
   Target,
   CheckCircle2
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const stages = [
   {
     id: 1,
-    tag: "FASE 1",
-    title: "Preparándote para tu gran aventura",
-    description: "Aún no cumples con los requisitos para aplicar a una escuela en Estados Unidos.",
+    tag: "ETAPA 1",
+    title: "Creación de Perfil Honesto",
+    description: "Crea tu perfil 360° destacando tu verdadera personalidad, gustos e intereses.",
     icon: FileCheck,
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
     supportText: "¿Cómo Match App te apoya en esta fase?",
     bullets: [
-      { text: "Clases de inglés online para avanzar tu nivel.", action: "Ver Clases" },
-      { text: "Programa de referidos para generar ingresos ($50 por cada referido).", action: "Programa de referidos" }
+      { text: "Verificación de perfil con foto e identidad." },
+      { text: "Test inicial de compatibilidad e intereses." },
+      { text: "Definición clara de expectativas de relación." }
     ],
-    objective: "construir las bases para avanzar al siguiente paso."
+    objective: "construir una carta de presentación auténtica e honesta."
   },
   {
     id: 2,
-    tag: "FASE 2",
-    title: "Iniciando tu proceso migratorio",
-    description: "Ya cuentas con los documentos necesarios para iniciar tu aplicación a una escuela.",
-    icon: GraduationCap,
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop",
+    tag: "ETAPA 2",
+    title: "Algoritmo & Emparejamiento",
+    description: "Nuestro sistema busca coincidencia de valores, estilo de vida y pasiones compartidas.",
+    icon: Sparkles,
     supportText: "¿Cómo Match App te apoya en esta fase?",
     bullets: [
-      { text: "Asesoría migratoria (Plan Esencial).", action: "Ver Plan" },
-      { text: "Aplicación a escuelas en Estados Unidos." },
-      { text: "Simulación de entrevista para tu visa." }
+      { text: "Sugerencias diarias alineadas a tus preferencias." },
+      { text: "Filtros por ubicación, cultura e idiomas." },
+      { text: "Ver a quién le gustas (disponible en el plan Pro)." }
     ],
-    objective: "obtener tu aceptación en una institución."
+    objective: "descubrir perfiles con verdadera afinidad."
   },
   {
     id: 3,
-    tag: "FASE 3",
-    title: "Organizando tu viaje a Estados Unidos",
-    description: "Ya fuiste aceptado y tienes tu visa de estudiante.",
-    icon: Plane,
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f?q=80&w=800&auto=format&fit=crop",
+    tag: "ETAPA 3",
+    title: "Conversación & Conexión Directa",
+    description: "Inicia chats fluidos y seguros sin barreras ni rodeos.",
+    icon: MessageSquare,
     supportText: "¿Cómo Match App te apoya en esta fase?",
     bullets: [
-      { text: "Planes de acompañamiento: PRO, ELITE, ALL INCLUSIVE", action: "Ver Planes" },
-      { text: "Guía para licencia de conducir." },
-      { text: "Apertura de cuenta bancaria." },
-      { text: "Chip de celular." },
-      { text: "Búsqueda de vivienda." },
-      { text: "Vuelos económicos." },
-      { text: "Pick up en aeropuerto." },
-      { text: "Clases de inglés (según plan)." },
-      { text: "Mentoría de adaptación." }
+      { text: "Mensajería directa e instantánea." },
+      { text: "Intercambio cultural y de experiencias." },
+      { text: "Consejos de comunicación fluida y respetuosa." }
     ],
-    extraInfo: "ALL INCLUSIVE incluye además: Ticket aéreo, 4 meses de vivienda, 4 meses de inglés, 2 meses de mentoría.",
-    objective: "llegar preparado y comenzar tu nueva vida en EE.UU."
+    objective: "crear una chispa real y construir confianza mutua."
   },
   {
     id: 4,
-    tag: "FASE 4",
-    title: "Tus primeros días en Estados Unidos",
-    description: "Ya estás en Estados Unidos y empieza tu crecimiento.",
-    icon: Smartphone,
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop",
+    tag: "ETAPA 4",
+    title: "La Cita & Encuentro Real",
+    description: "Da el paso hacia un encuentro seguro y memorable.",
+    icon: Heart,
     supportText: "¿Cómo Match App te apoya en esta fase?",
     bullets: [
-      { text: "Acceso a Match App con herramientas exclusivas." },
-      { text: "Recursos para adaptación y crecimiento." },
-      { text: "Herramientas para tu vida académica y personal." },
-      { text: "Acceso a oportunidades y guías prácticas." },
-      { text: "Soporte continuo." }
+      { text: "Consejos de seguridad para la primera cita." },
+      { text: "Recomendación de lugares y experiencias." },
+      { text: "Comunidad segura enfocada en relaciones duraderas." }
     ],
-    actionBottom: "Descargar App",
-    objective: "crecer, desarrollarte y alcanzar tus metas en EE.UU."
+    objective: "conocer a tu pareja ideal en el mundo real."
   }
 ];
 
 export default function StageDetails() {
   return (
-    <section className="pt-32 bg-white overflow-hidden" id="fases-viaje">
+    <section className="pt-32 bg-white overflow-hidden font-sans" id="fases-viaje">
       <div className="container mx-auto px-6 max-w-[1600px]">
 
         {/* Header */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-medium tracking-tight mb-4 text-slate-900">
-            ¡Identifica en qué fase <br />
-            te encuentras!
+            ¡El camino hacia <br />
+            tu pareja ideal!
           </h2>
           <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-2xl">
-            Identifica dónde estás en tu viaje y descubre cómo te podemos ayudar hoy mismo.
+            Conoce los pasos sencillos para conectar de forma auténtica, honesta y segura en Match App.
           </p>
         </div>
 
@@ -112,7 +97,7 @@ export default function StageDetails() {
                   {/* Content Layout */}
                   <div className="relative p-6 w-full flex flex-col h-full z-10">
                     
-                    {/* Header line: Icon and Tag with NO containers */}
+                    {/* Header line */}
                     <div className="flex items-center justify-between mb-5">
                       <div className="text-[#9b4dca]">
                         <Icon size={24} />
@@ -123,7 +108,7 @@ export default function StageDetails() {
                     </div>
                     
                     {stage.title && (
-                      <h4 className={`text-lg md:text-xl font-medium tracking-tight leading-snug mb-2 ${stage.id === 3 ? 'text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] font-bold' : 'text-slate-900'}`}>
+                      <h4 className="text-lg md:text-xl font-medium tracking-tight leading-snug mb-2 text-slate-900">
                         {stage.title}
                       </h4>
                     )}
@@ -146,29 +131,9 @@ export default function StageDetails() {
                           </li>
                         ))}
                       </ul>
-
-                      {stage.extraInfo && (
-                        <div className="mb-6">
-                          <p className="text-[11px] text-emerald-600 leading-relaxed font-medium flex gap-2 items-start">
-                            <span className="text-emerald-500 font-bold mt-0.5">★</span>
-                            {stage.extraInfo}
-                          </p>
-                        </div>
-                      )}
-
-                      {stage.actionBottom && (
-                        <div className="w-full mt-auto mb-5 flex flex-col items-center">
-                          <span className="text-[10px] font-bold text-[#9b4dca] uppercase tracking-wider mb-2">
-                            Próximamente
-                          </span>
-                          <button className="w-full text-xs font-medium text-white bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] hover:opacity-90 py-3 rounded-full transition-all shadow-md transform hover:-translate-y-0.5">
-                            {stage.actionBottom}
-                          </button>
-                        </div>
-                      )}
                     </div>
 
-                    {/* Objective without container */}
+                    {/* Objective */}
                     <div className="mt-auto flex items-start gap-2 pt-2">
                       <Target className="w-4 h-4 text-[#9b4dca] shrink-0 mt-0.5" />
                       <p className="text-[11px] text-slate-600 leading-relaxed">

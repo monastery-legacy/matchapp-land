@@ -17,18 +17,18 @@ export default function TouristShowcase() {
                     {/* Left Column: Text */}
                     <div className="w-full lg:w-[35%] flex flex-col pt-2 lg:pt-10 pr-0 lg:pr-8">
                         <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-                            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2">Visa de Turismo</span>
-                            <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Tu puerta de entrada a USA</span>
+                            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2">Match Dating Pro</span>
+                            <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Conexiones internacionales & intercambio cultural</span>
                         </h2>
                         <p className="text-gray-600 text-base leading-[1.7] font-light">
-                            Gestionamos todo tu proceso migratorio para que obtengas tu visa de turista B1/B2: preparación profesional de documentos, seguimiento personalizado y simulaciones de entrevista consular.<br /><br /> Descubre los destinos más icónicos de Estados Unidos y recorre sus mejores ciudades. Te brindamos el respaldo necesario para que viajes con tranquilidad y vivas experiencias turísticas verdaderamente inolvidables.
+                            El plan Match Dating Pro rompe las barreras geográficas y culturales. Conecta con personas increíbles de distintos países, aprende sobre nuevas culturas, estilos de vida e idiomas mientras buscas a tu pareja ideal.<br /><br /> Accede a filtros avanzados de compatibilidad, me gustas ilimitados, modo incógnito y la posibilidad de saber a quién le gustas de inmediato. Experimenta el nivel más exclusivo y efectivo de emparejamiento.
                         </p>
                         <div className="mt-6 flex flex-col sm:flex-row gap-4">
                             <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] border border-[#2d1b4e] text-white rounded-full hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
-                                <Link href="/visas/tourist" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Quiero saber más' })}>Quiero saber más</Link>
+                                <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Encontrar Pareja Pro' })}>Encontrar mi Pareja ahora</a>
                             </Button>
                             <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-transparent border border-black text-black rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
-                                <a href="https://calendar.app.google/wvmELP7dKEmZKtL37" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Agendar reunión virtual' })}>Agendar reunión virtual</a>
+                                <Link href="#planes" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Conocer Plan Pro' })}>Ver Detalles del Plan Pro</Link>
                             </Button>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ export default function TouristShowcase() {
                         <InlineYouTubeFeature
                             videoId="ksaKUwErSGw"
                             posterSrc="/assets/generated/tourist_showcase_disney.png"
-                            posterAlt="Visa Turismo"
+                            posterAlt="Match Dating Pro - Conexiones Internacionales"
                             className="rounded-3xl"
                         />
                     </div>

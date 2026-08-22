@@ -56,36 +56,36 @@ export default function Stats() {
   const stats = [
     {
       icon: Shield,
-      number: 30,
-      suffix: "+",
-      title: "Experiencia Educativa",
-      description: "Escuelas aliadas con más de 30 años en el mercado",
+      number: 100,
+      suffix: "%",
+      title: "Perfiles Verificados",
+      description: "Comunidad segura e honesta",
     },
     {
       icon: Users,
-      number: 783,
+      number: 1540,
       suffix: "+",
-      title: "Estudiantes Felices",
-      description: "Sueños cumplidos en USA",
+      title: "Parejas Formadas",
+      description: "Historias reales de amor y conexión",
     },
     {
       icon: Globe,
-      number: 25,
+      number: 35,
       suffix: "+",
-      title: "Estados Disponibles",
-      description: "Cobertura en todo el país",
+      title: "Países Conectados",
+      description: "Intercambio cultural y citas sin fronteras",
     },
     {
       icon: CheckCircle2,
-      number: 95,
+      number: 98,
       suffix: "%",
-      title: "Tasa de Aprobación",
-      description: "Garantía en tus trámites",
+      title: "Compatibilidad",
+      description: "Algoritmo por intereses reales",
     },
   ];
 
   return (
-    <section className="py-16 md:py-24 lg:py-28 bg-black relative overflow-hidden">
+    <section className="py-16 md:py-24 lg:py-28 bg-black relative overflow-hidden font-sans">
       <div className="container px-6 md:px-12 mx-auto relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-8">
 

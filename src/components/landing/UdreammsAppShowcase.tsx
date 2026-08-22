@@ -6,11 +6,11 @@ import { sendMetaEvent } from "@/lib/meta-events";
 
 export default function UdreammsAppShowcase() {
     return (
-        <section className="py-16 md:py-24 lg:py-28 bg-black text-white overflow-hidden">
+        <section className="py-16 md:py-24 lg:py-28 bg-black text-white overflow-hidden font-sans">
             <div className="container px-6 md:px-12 mx-auto">
                 <div className="flex flex-col items-center text-center group">
                     <p className="text-white font-medium mb-6 tracking-tight uppercase text-sm md:text-base">
-                        Esta aplicación solo está disponible para estudiantes en USA
+                        Conecta con personas afines desde cualquier lugar
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 mb-8">
                         <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-white leading-none">
@@ -29,15 +29,15 @@ export default function UdreammsAppShowcase() {
                     </div>
 
                     <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-white mb-10 leading-none">
-                        para comenzar
+                        para encontrar pareja
                     </h2>
 
                     <p className="text-lg md:text-xl text-white/60 font-medium mb-12 max-w-2xl tracking-tight">
-                        Utilizada por cientos de usuarios
+                        Utilizada por miles de personas que buscan conexiones auténticas, honestas y duraderas
                     </p>
 
                     <div className="relative">
-                        <Button onClick={() => sendMetaEvent('Lead', { source: 'UdreammsAppShowcase: Descargar' })} className="rounded-full bg-white text-black hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white font-medium px-12 py-8 text-xl shadow-2xl transition-all border-none flex items-center gap-3">
+                        <Button onClick={() => sendMetaEvent('Lead', { source: 'MatchAppShowcase: Descargar' })} className="rounded-full bg-white text-black hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white font-medium px-12 py-8 text-xl shadow-2xl transition-all border-none flex items-center gap-3">
                             <Smartphone className="w-6 h-6" />
                             Descargar Match App
                         </Button>
