@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <p className="text-white text-2xl font-medium tracking-tight">Haciendo que Udreamms sea útil para todos</p>
             <div className="mt-8">
-              <img src="/icons/new-icon-udreamms.png" alt="Udreamms Logo" className="w-16 h-auto opacity-80 mb-4" />
+              <img src="/matchapp-logo-circular.png" alt="Udreamms Logo" className="w-16 h-16 object-cover rounded-full opacity-80 mb-4" />
               <p className="text-gray-500 text-sm">
                 Tu puente seguro a los Estados Unidos.
                 <br />

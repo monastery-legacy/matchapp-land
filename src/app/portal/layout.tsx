@@ -241,9 +241,9 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
             </button>
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('/')}>
               <div className="w-7 h-7 relative">
-                <img src="/icons/new-icon-udreamms.png" alt="Udreamms" className="object-contain w-full h-full drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]" />
+                <img src="/matchapp-logo-circular.png" alt="Match Dating" className="object-cover w-full h-full rounded-full drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]" />
               </div>
-              <span className="text-lg font-normal tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">Udreamms</span>
+              <span className="text-lg font-normal tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">Match Dating</span>
             </div>
           </div>
 

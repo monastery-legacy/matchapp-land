@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://udreamms.com";
-export const SITE_NAME = "Udreamms";
+export const SITE_NAME = "Match Dating";
 
 /** URL estable del logo (Google Search favicon + schema.org). */
-export const SITE_LOGO_PATH = "/icons/new-icon-udreamms.png";
+export const SITE_LOGO_PATH = "/matchapp-logo-circular.png";
 export const SITE_LOGO_URL = `${SITE_URL}${SITE_LOGO_PATH}`;
 
 export const DEFAULT_DESCRIPTION =
@@ -45,7 +45,7 @@ const PAGE_SEO: Record<
   { title: string; description: string }
 > = {
   "/": {
-    title: "Udreamms | Tu Sueño en USA",
+    title: "Match | Dating App",
     description: DEFAULT_DESCRIPTION,
   },
   "/about": {
@@ -166,7 +166,7 @@ export function noindexMetadata(title: string): Metadata {
 export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Udreamms | Tu Sueño en USA",
+    default: "Match | Dating App",
     template: "%s",
   },
   description: DEFAULT_DESCRIPTION,
@@ -179,7 +179,7 @@ export const rootMetadata: Metadata = {
     locale: "es_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "Udreamms | Tu Sueño en USA",
+    title: "Match | Dating App",
     description: DEFAULT_DESCRIPTION,
     images: [
       {
@@ -192,7 +192,7 @@ export const rootMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Udreamms | Tu Sueño en USA",
+    title: "Match | Dating App",
     description: DEFAULT_DESCRIPTION,
   },
   robots: {

@@ -142,19 +142,18 @@ export default function Hero({ onStartQuote }: HeroProps) {
           <div className="w-full md:max-w-[80%] lg:max-w-[70%] text-left space-y-3">
             {/* Texto superior (Eyebrow) */}
             <p className="text-gray-300 text-sm md:text-base font-medium tracking-[0.2em] uppercase">
-              ESTUDIA | VIAJA | DISFRUTA
+              CONOCE | CONECTA | ENAMÓRATE
             </p>
 
             {/* Título Principal */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.05] text-white tracking-tighter">
-              Tu experiencia <br />
-              en Estados Unidos <br />
-              comienza aquí
+              Haz match con alguien <br />
+              que realmente encaje contigo
             </h1>
 
             <div className="pt-1">
               <p className="text-gray-300 text-base md:text-lg font-medium tracking-tight">
-                Asesoría integral para que vivas la mejor experiencia en Estados Unidos
+                Una nueva forma de conocer personas, conectar y crear algo especial.
               </p>
             </div>
           </div>
