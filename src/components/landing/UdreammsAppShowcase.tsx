@@ -45,7 +45,7 @@ export default function UdreammsAppShowcase() {
                         <img
                             src="/5297951-7905525-Photoroom.png"
                             alt="Descarga Match App"
-                            className="w-64 sm:w-80 md:w-96 lg:w-[480px] h-auto object-contain transition-transform duration-300 hover:scale-105"
+                            className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto object-contain transition-transform duration-300 hover:scale-105"
                         />
                     </a>
                 </div>
