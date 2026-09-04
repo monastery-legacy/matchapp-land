@@ -80,7 +80,7 @@ export default function UdreammsTVShowcase() {
             {/* 1. DEGRADADO SUPERIOR (Badge sin borde y con tipografía fina font-light) */}
             <div className="absolute top-0 left-0 right-0 z-30 w-full h-24 md:h-36 lg:h-48 bg-gradient-to-b from-black via-black/95 to-transparent flex items-center justify-center pt-6 md:pt-10 pointer-events-none">
                 <span className="w-fit h-fit inline-block bg-white/5 text-white/90 backdrop-blur-md text-[10px] md:text-[12px] font-light uppercase tracking-widest px-6 py-2.5 rounded-full shadow-md pointer-events-auto">
-                    PRÓXIMAMENTE • PLATAFORMA DE STREAMING
+                    COMING SOON • STREAMING PLATFORM
                 </span>
             </div>
 
@@ -153,7 +153,7 @@ export default function UdreammsTVShowcase() {
                             {/* Título Principal con Capa Independiente para el Signo + */}
                             <div className="relative inline-block w-fit">
                                 <h2 className="text-4xl md:text-[5.5rem] lg:text-[6.5rem] font-bold text-white tracking-tighter leading-none select-none">
-                                    MATCH APP
+                                    KLICK
                                 </h2>
 
                                 {/* Capa Independiente para el Signo + (No interfiere con el mensaje) */}
@@ -203,11 +203,11 @@ export default function UdreammsTVShowcase() {
                             <div className="max-w-2xl mt-4 md:mt-6">
 
                                 <h3 className="text-xl md:text-3xl font-light text-slate-300 tracking-wide mb-6">
-                                    El canal de entretenimiento y educación definitiva para triunfar en USA
+                                    The ultimate entertainment and educational channel to thrive in the USA
                                 </h3>
 
                                 <p className="text-base text-slate-400 font-light leading-relaxed mb-8 max-w-xl">
-                                    Accede a series exclusivas, entrevistas, testimonios de éxito sin editar y guías en vivo sobre relaciones y emparejamiento. Todo el contenido audiovisual de Match App unificado en una sola plataforma.
+                                    Access exclusive series, interviews, unedited success stories, and live guides on relationships and matchmaking. All Klick audiovisual content unified on a single platform.
                                 </p>
                             </div>
                         </motion.div>
@@ -222,7 +222,7 @@ export default function UdreammsTVShowcase() {
                         whileTap={{ scale: 0.95 }}
                         className="w-full sm:w-auto px-12 md:px-16 py-3.5 bg-transparent hover:bg-white/10 text-white border border-white/30 backdrop-blur-md rounded-full text-base md:text-lg font-medium tracking-wide transition-all shadow-xl flex items-center justify-center gap-3"
                     >
-                        Match App Streaming
+                        Klick Streaming
                     </motion.button>
                 </div>
             </div>

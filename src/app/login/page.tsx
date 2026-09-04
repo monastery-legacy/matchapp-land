@@ -177,17 +177,17 @@ function LoginContent() {
       let userCredential;
       if (isRegistering) {
         userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        toast.success('Cuenta creada exitosamente');
+        toast.success('Account created successfully');
       } else {
         userCredential = await signInWithEmailAndPassword(auth, email, password);
-        toast.success('Sesión iniciada correctamente');
+        toast.success('Signed in successfully');
       }
       if (userCredential?.user) {
         await syncUserInFirestore(userCredential.user);
       }
       router.push('/portal');
     } catch (error: any) {
-      toast.error('Error en autenticación: ' + error.message);
+      toast.error('Authentication error: ' + error.message);
     } finally {
       setLoading(false);
     }
@@ -200,10 +200,10 @@ function LoginContent() {
       if (result?.user) {
         await syncUserInFirestore(result.user);
       }
-      toast.success(`Iniciaste sesión con ${providerName}`);
+      toast.success(`Signed in with ${providerName}`);
       router.push('/portal');
     } catch (error: any) {
-      toast.error(`Error con ${providerName}: ` + error.message);
+      toast.error(`Error with ${providerName}: ` + error.message);
     } finally {
       setLoading(false);
     }
@@ -229,7 +229,7 @@ function LoginContent() {
             >
               <div className="flex flex-col items-center text-center max-w-4xl mb-12">
                 <div className="flex flex-wrap justify-center gap-x-[0.25em] text-3xl md:text-5xl font-light tracking-tight text-white leading-[1.15] justify-center px-4">
-                  {"Bienvenido a Udreamms".split(' ').map((word, wordIndex) => (
+                  {"Welcome to Klick".split(' ').map((word, wordIndex) => (
                     <motion.span
                       key={`welcome-word-${wordIndex}`}
                       initial={{ opacity: 0, y: 10, filter: 'blur(4px)' }}
@@ -242,7 +242,7 @@ function LoginContent() {
                   ))}
                 </div>
                 <div className="flex flex-wrap justify-center gap-x-[0.25em] text-gray-400 text-xs md:text-sm font-light tracking-wide mt-4 uppercase">
-                  {"Elige cómo deseas ingresar".split(' ').map((word, wordIndex) => (
+                  {"Choose how you want to sign in".split(' ').map((word, wordIndex) => (
                     <motion.span
                       key={`subtitle-word-${wordIndex}`}
                       initial={{ opacity: 0, y: 10, filter: 'blur(4px)' }}
@@ -259,17 +259,17 @@ function LoginContent() {
               <Button
                 variant="outline"
                 onClick={() => { setShowForm(true); setIsRegistering(true); }}
-                className="w-full max-w-sm h-14 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105 font-light text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg"
+                className="w-full max-w-sm h-14 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/80 hover:scale-105 font-light text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg"
               >
-                COMENZAR EN UDREAMMS
+                GET STARTED WITH KLICK
               </Button>
 
               <Button
                 variant="outline"
-                className="w-full max-w-sm h-14 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105 font-light text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg"
+                className="w-full max-w-sm h-14 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/80 hover:scale-105 font-light text-xs md:text-sm tracking-widest transition-all duration-300 shadow-lg"
                 onClick={() => { setShowForm(true); setIsRegistering(false); }}
               >
-                YA TENGO MI CUENTA EN UDREAMMS
+                I ALREADY HAVE A KLICK ACCOUNT
               </Button>
 
               <button
@@ -277,7 +277,7 @@ function LoginContent() {
                 onClick={() => router.push('/')}
                 className="text-[9px] md:text-[10px] text-white/40 hover:text-white pt-6 transition-colors tracking-[0.3em] font-semibold uppercase"
               >
-                Volver a la página principal
+                Back to home page
               </button>
             </motion.div>
           ) : (
@@ -290,8 +290,8 @@ function LoginContent() {
             >
               <div className="text-center px-4 max-w-2xl mx-auto flex flex-col gap-3 md:gap-4 min-h-[6rem] md:min-h-[8rem] justify-center mb-6">
                 {(isRegistering 
-                  ? ["Tu futuro comienza hoy con Udreamms", "Creemos tu cuenta para comenzar"]
-                  : ["¡Te damos la bienvenida de nuevo!", "Inicia sesión con tu cuenta para continuar"]
+                  ? ["Your journey starts today with Klick", "Let's create your account to get started"]
+                  : ["Welcome Back!", "Sign in to your account to continue"]
                 ).map((line, lineIndex) => (
                   <div
                     key={`${isRegistering ? 'reg' : 'log'}-line-${lineIndex}`}
@@ -320,7 +320,7 @@ function LoginContent() {
                 <div className="space-y-1">
                   <Input
                     type="email"
-                    placeholder="Usuario (Correo electrónico)"
+                    placeholder="Username (Email Address)"
                     className="bg-white/5 border-white/10 focus:border-white/40 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-white/40 rounded-full h-12 text-white placeholder:text-white/20 transition-all text-xs tracking-widest px-6 text-center"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -330,7 +330,7 @@ function LoginContent() {
                 <div className="space-y-1">
                   <Input
                     type="password"
-                    placeholder="Clave de acceso (Contraseña)"
+                    placeholder="Password"
                     className="bg-white/5 border-white/10 focus:border-white/40 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-white/40 rounded-full h-12 text-white placeholder:text-white/20 transition-all text-xs tracking-widest px-6 text-center"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -340,16 +340,16 @@ function LoginContent() {
 
                 <Button
                   type="submit"
-                  className="w-full h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-[1.02] font-light text-sm tracking-wider transition-all duration-300 shadow-lg disabled:opacity-50 disabled:hover:scale-100 disabled:hover:from-transparent disabled:hover:to-transparent disabled:hover:border-white/40 mt-4"
+                  className="w-full h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/80 font-light text-sm tracking-wider transition-all duration-300 shadow-lg disabled:opacity-50 disabled:hover:scale-100 mt-4"
                   disabled={loading}
                 >
-                  {loading ? 'Sincronizando...' : (isRegistering ? 'Registrarse' : 'Iniciar Sesión')}
+                  {loading ? 'Syncing...' : (isRegistering ? 'Create Account' : 'Sign In')}
                 </Button>
               </form>
 
               <div className="relative flex items-center py-4 max-w-md mx-auto w-full">
                 <div className="flex-grow border-t border-white/10"></div>
-                <span className="flex-shrink-0 mx-4 text-white/30 text-[10px] tracking-widest uppercase font-semibold">O continuar con</span>
+                <span className="flex-shrink-0 mx-4 text-white/30 text-[10px] tracking-widest uppercase font-semibold">OR CONTINUE WITH</span>
                 <div className="flex-grow border-t border-white/10"></div>
               </div>
 
@@ -416,12 +416,12 @@ function LoginContent() {
 
                 <Button
                   type="button"
-                  onClick={() => toast.info('Autenticación por teléfono próximamente')}
+                  onClick={() => toast.info('Phone authentication coming soon')}
                   className="h-12 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all flex items-center justify-center px-4 md:px-5 gap-2 font-medium text-xs md:text-sm whitespace-nowrap"
                   disabled={loading}
                 >
                   <Phone className="w-3.5 h-3.5" />
-                  Teléfono
+                  Phone
                 </Button>
               </div>
 
@@ -430,7 +430,7 @@ function LoginContent() {
                 onClick={() => setShowForm(false)}
                 className="w-full text-center text-[9px] md:text-[10px] text-white/40 hover:text-white/80 mt-8 transition-colors tracking-[0.3em] font-semibold uppercase"
               >
-                Volver
+                Back
               </button>
             </motion.div>
           )}
@@ -444,7 +444,7 @@ function LoginContent() {
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[9px] tracking-[0.6em] uppercase text-white/40 whitespace-nowrap"
       >
-        Plataforma Udreamms
+        Klick Platform
       </motion.div>
     </div>
   );

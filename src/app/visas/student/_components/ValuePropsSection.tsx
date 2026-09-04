@@ -54,8 +54,8 @@ export default function ValuePropsSection() {
                 <FadeIn delay={0.4}>
                     <div className="text-center mt-24 md:mt-32 max-w-4xl mx-auto">
                         <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-[#1a2b3b] leading-tight">
-                            Hacemos que tu sueño de estudiar en Estados Unidos se haga posible con <br />
-                            <span className="bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] bg-clip-text text-transparent font-semibold">Match App</span>
+                            We make your dream of studying in the United States possible with <br />
+                            <span className="bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] bg-clip-text text-transparent font-semibold">Klick</span>
                         </h2>
                     </div>
                 </FadeIn>
@@ -63,7 +63,7 @@ export default function ValuePropsSection() {
                 {/* Requisitos Section */}
                 <FadeIn delay={0.6}>
                     <div className="mt-24 md:mt-32 max-w-5xl mx-auto px-4 md:px-0">
-                        <h3 className="text-2xl md:text-4xl font-medium text-center mb-16 text-[#1a2b3b]">Requisitos para iniciar el trámite</h3>
+                        <h3 className="text-2xl md:text-4xl font-medium text-center mb-16 text-[#1a2b3b]">Requirements to Begin the Process</h3>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 mb-16">
                             {/* Columna Pasaporte */}
@@ -72,7 +72,7 @@ export default function ValuePropsSection() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
                                 </div>
                                 <p className="text-lg text-gray-700 leading-relaxed font-light">
-                                    Tener tu <span className="font-medium text-[#1a2b3b]">pasaporte listo y vigente</span> para los próximos 6 meses (si es posible más, mucho mejor).
+                                    Have your <span className="font-medium text-[#1a2b3b]">passport ready and valid</span> for at least the next 6 months.
                                 </p>
                             </div>
 
@@ -82,7 +82,7 @@ export default function ValuePropsSection() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                                 </div>
                                 <p className="text-lg text-gray-700 leading-relaxed font-light">
-                                    Tener un <span className="font-medium text-[#1a2b3b]">estado de cuenta</span> que respalde que podrás pagar tus gastos propios en Estados Unidos con un valor mínimo de <span className="font-medium text-[#1a2b3b]">$5,000 Dólares americanos</span>. El estado de cuenta puede ser tuyo o de un sponsor (padre, madre, hermanos, tíos, empresa).
+                                    Have a <span className="font-medium text-[#1a2b3b]">bank statement</span> demonstrating sufficient financial backing of at least <span className="font-medium text-[#1a2b3b]">$5,000 USD</span>. The statement can be yours or from a sponsor.
                                 </p>
                             </div>
                         </div>
@@ -90,10 +90,10 @@ export default function ValuePropsSection() {
                         {/* Notas */}
                         <div className="flex flex-col gap-4 text-center max-w-4xl mx-auto">
                             <p className="text-sm text-gray-500 font-light leading-relaxed">
-                                <span className="font-medium text-gray-700">Nota importante:</span> Este dinero no debes pagárselo a nadie (tampoco a nosotros), solo necesitas tenerlo en tu cuenta como respaldo. Nuestra compañía no solicita ni recibe este dinero; si alguien te contacta pidiendo que lo transfieras, por favor ten cuidado para evitar fraudes y estafas.
+                                <span className="font-medium text-gray-700">Important Note:</span> You do not pay this money to anyone (including us); it simply serves as financial proof in your account. Our company never asks for this money to be transferred.
                             </p>
                             <p className="text-sm text-gray-500 font-light leading-relaxed">
-                                Los documentos deben estar escaneados en formato PDF y serán enviados a nuestro correo <a href="mailto:services@udreamms.com" className="text-blue-500 hover:underline">services@udreamms.com</a>.
+                                Documents should be scanned in PDF format and sent to our email <a href="mailto:support@klick.app" className="text-blue-500 hover:underline">support@klick.app</a>.
                             </p>
                         </div>
                     </div>

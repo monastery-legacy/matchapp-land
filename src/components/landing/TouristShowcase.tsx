@@ -15,20 +15,20 @@ export default function TouristShowcase() {
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center lg:items-center">
                     
                     {/* Left Column: Text */}
-                    <div className="w-full lg:w-[30%] flex flex-col pt-2 lg:pt-4 pr-0 lg:pr-4">
-                        <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-                            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2 font-medium">Match Dating Pro</span>
-                            <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Conexiones internacionales & intercambio cultural</span>
+                    <div className="w-full lg:w-[35%] xl:w-[30%] flex flex-col pt-2 lg:pt-4 items-center lg:items-start text-center lg:text-left">
+                        <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.15]">
+                            <span className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl block mb-2 font-medium">Klick Pro</span>
+                            <span className="text-gray-500 text-xl sm:text-2xl lg:text-3xl font-light">International connections & cultural exchange</span>
                         </h2>
-                        <p className="text-gray-600 text-base leading-[1.7] font-light">
-                            El plan Match Dating Pro rompe las barreras geográficas y culturales. Conecta con personas increíbles de distintos países, aprende sobre nuevas culturas, estilos de vida e idiomas mientras buscas a tu pareja ideal.<br /><br /> Accede a filtros avanzados de compatibilidad, me gustas ilimitados, modo incógnito y la posibilidad de saber a quién le gustas de inmediato. Experimenta el nivel más exclusivo y efectivo de emparejamiento.
+                        <p className="text-gray-600 text-base leading-[1.7] font-light max-w-xl lg:max-w-none">
+                            The Klick Pro plan breaks down geographical and cultural barriers. Connect with incredible people from different countries, learn about new cultures, lifestyles, and languages while searching for your ideal partner.<br /><br /> Access advanced compatibility filters, unlimited likes, incognito mode, and the ability to know who likes you right away. Experience the most exclusive and effective level of matchmaking.
                         </p>
-                        <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                            <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] border border-[#2d1b4e] text-white rounded-full hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
-                                <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Encontrar Pareja Pro' })}>Encontrar mi Pareja ahora</a>
+                        <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                            <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-transparent border border-black text-black rounded-full hover:bg-black/10 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
+                                <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Encontrar Pareja Pro' })}>Find my Partner now</a>
                             </Button>
-                            <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-transparent border border-black text-black rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
-                                <Link href="#planes" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Conocer Plan Pro' })}>Ver Detalles del Plan Pro</Link>
+                            <Button asChild className="w-full sm:w-64 px-5 py-2.5 bg-transparent border border-black text-black rounded-full hover:bg-black/10 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
+                                <Link href="#planes" onClick={() => sendMetaEvent('Lead', { source: 'TouristShowcase: Conocer Plan Pro' })}>View Pro Plan Details</Link>
                             </Button>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function TouristShowcase() {
                             videoId="9NEnvqghAAo"
                             startSeconds={2040}
                             posterSrc="/assets/generated/tourist_showcase_disney.png"
-                            posterAlt="Match Dating Pro - Conexiones Internacionales"
+                            posterAlt="Klick Pro - International Connections"
                             className="rounded-3xl w-full h-full"
                         />
                     </div>

@@ -7,52 +7,52 @@ import WhatsappIcon from "@/components/icons/WhatsappIcon";
 
 const categories = [
   {
-    id: "matchapp",
-    title: "Match App",
+    id: "klick",
+    title: "Klick",
     faqs: [
       {
-        question: "¿Qué es Match App?",
-        answer: "Match App es una plataforma de citas y emparejamiento diseñada para conectar personas que buscan relaciones honestas, auténticas y significativas. Combinamos un algoritmo de compatibilidad inteligente con verificación de perfiles y acompañamiento constante."
+        question: "What is Klick?",
+        answer: "Klick is a dating and matchmaking platform designed to connect people seeking honest, authentic, and meaningful relationships. We combine a smart compatibility algorithm with profile verification and constant guidance."
       },
       {
-        question: "¿Cómo funciona el algoritmo de emparejamiento?",
-        answer: "Nuestro algoritmo analiza tus valores, aficiones, estilo de vida y metas personales para sugerirte personas verdaderamente afines. Priorizamos la compatibilidad real sobre las coincidencias superficiales."
+        question: "How does the matching algorithm work?",
+        answer: "Our algorithm analyzes your values, hobbies, lifestyle, and personal goals to suggest truly compatible people. We prioritize real compatibility over superficial matches."
       },
       {
-        question: "¿Qué diferencia hay entre el plan Match Dating y Match Dating Pro?",
-        answer: "El plan Match Dating incluye la creación de perfil 360°, algoritmo básico por intereses, chat directo y me gustas diarios. El plan Match Dating Pro desbloquea interacciones ilimitadas, ver a quién le gustas antes de hacer match, filtros avanzados de valores y estilo de vida, boost semanal de visibilidad y modo incógnito."
+        question: "What is the difference between Klick and Klick Pro?",
+        answer: "The Klick plan includes 360° profile creation, basic interest algorithm, direct chat, and daily likes. The Klick Pro plan unlocks unlimited interactions, seeing who likes you before connecting, advanced value and lifestyle filters, weekly visibility boost, and incognito mode."
       },
       {
-        question: "¿Por dónde empiezo?",
-        answer: "Empiezas seleccionando tu plan (Match Dating o Match Dating Pro) y completando tu perfil con honestidad sobre tus gustos e intereses para empezar a conectar de inmediato."
+        question: "Where do I start?",
+        answer: "You start by selecting your plan (Klick or Klick Pro) and completing your profile honestly about your tastes and interests to start connecting right away."
       }
     ]
   },
   {
     id: "compatibility",
-    title: "Compatibilidad e Intereses",
+    title: "Compatibility & Interests",
     faqs: [
       {
-        question: "¿Cómo se evalúa la afinidad entre usuarios?",
-        answer: "Mediante un test de personalidad e intereses donde defines tus pasiones, hábitos y visión de vida. Así garantizamos conversaciones fluidas e interés mutuo desde el primer mensaje."
+        question: "How is affinity between users evaluated?",
+        answer: "Through a personality and interest test where you define your passions, habits, and life vision. This ensures fluid conversations and mutual interest from the very first message."
       },
       {
-        question: "¿Puedo conectar con personas de otros países?",
-        answer: "¡Por supuesto! Match App fomenta el intercambio cultural y las citas internacionales. Puedes conocer la cultura, costumbres y formas de vivir de personas de distintos países."
+        question: "Can I connect with people from other countries?",
+        answer: "Of course! Klick encourages cultural exchange and international dating. You can discover the culture, customs, and lifestyles of people from different countries."
       }
     ]
   },
   {
     id: "safety",
-    title: "Seguridad y Verificación",
+    title: "Safety & Verification",
     faqs: [
       {
-        question: "¿Cómo garantizan la seguridad y la honestidad en los perfiles?",
-        answer: "Cada usuario pasa por un proceso de verificación de identidad de foto y teléfono. Además, nuestro equipo de moderación supervisa continuamente la comunidad para mantener un ambiente seguro y libre de perfiles falsos."
+        question: "How do you ensure safety and honesty in profiles?",
+        answer: "Each user goes through a photo and phone identity verification process. Additionally, our moderation team continuously supervises the community to maintain a safe environment free of fake profiles."
       },
       {
-        question: "¿Mis datos personales están protegidos?",
-        answer: "Absolutamente. Tus datos están encriptados y solo compartimos lo que tú decides hacer público en tu perfil. Puedes usar el modo incógnito en el plan Pro si deseas mayor privacidad."
+        question: "Is my personal data protected?",
+        answer: "Absolutely. Your data is encrypted and we only share what you choose to make public on your profile. You can use incognito mode on the Pro plan for greater privacy."
       }
     ]
   }
@@ -77,14 +77,13 @@ export default function FAQsSection() {
     <section id="faqs" className="py-16 md:py-24 lg:py-28 bg-black font-sans text-white relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 max-w-5xl relative z-10">
         
-        {/* Header */}
         <div className="mb-16 text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-4 text-white">
-            Tus dudas resueltas <br className="hidden md:inline" />
-            <span className="text-gray-400">de forma transparente</span>
+            Your questions answered <br className="hidden md:inline" />
+            <span className="text-gray-400">transparently</span>
           </h2>
           <p className="text-lg text-gray-400 font-normal leading-relaxed max-w-2xl mx-auto">
-            Encuentra claridad sobre nuestros planes, perfiles verificados y proceso de coincidencia. Honestidad total desde el primer momento.
+            Find clarity about our plans, verified profiles, and matching process. Total honesty from day one.
           </p>
         </div>
 
@@ -164,21 +163,20 @@ export default function FAQsSection() {
           </AnimatePresence>
         </div>
 
-        {/* WhatsApp CTA Dudas */}
         <div className="mt-16 text-center max-w-xl mx-auto flex flex-col items-center">
           <p className="text-gray-400 text-xs md:text-sm mb-6 leading-relaxed">
-            <span className="font-semibold text-white block mb-1 text-sm md:text-base">¿Aún tienes preguntas?</span>
-            Si quieres hablar con nuestro equipo de matchmaking o tienes dudas sobre los planes, estamos listos para atenderte por WhatsApp.
+            <span className="font-semibold text-white block mb-1 text-sm md:text-base">Still have questions?</span>
+            If you want to talk to our matchmaking team or have questions about our plans, we are ready to assist you on WhatsApp.
           </p>
           
           <a
             href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-auto px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium text-xs md:text-sm hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 transition-all duration-300"
+            className="inline-flex items-center justify-center w-auto px-5 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium text-xs md:text-sm hover:bg-white/10 hover:border-white/40 hover:[transition-property:transform,box-shadow] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 transition-all duration-300"
           >
             <WhatsappIcon className="w-4 h-4" />
-            <span className="ml-2">Chatear por WhatsApp</span>
+            <span className="ml-2">Chat on WhatsApp</span>
           </a>
         </div>
         

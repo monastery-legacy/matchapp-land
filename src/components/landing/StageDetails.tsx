@@ -13,59 +13,59 @@ import {
 const stages = [
   {
     id: 1,
-    tag: "ETAPA 1",
-    title: "Creación de Perfil Honesto",
-    description: "Crea tu perfil 360° destacando tu verdadera personalidad, gustos e intereses.",
+    tag: "STAGE 1",
+    title: "Honest Profile Creation",
+    description: "Create your 360° profile highlighting your true personality, tastes, and interests.",
     icon: FileCheck,
-    supportText: "¿Cómo Match App te apoya en esta fase?",
+    supportText: "How does Klick support you in this stage?",
     bullets: [
-      { text: "Verificación de perfil con foto e identidad." },
-      { text: "Test inicial de compatibilidad e intereses." },
-      { text: "Definición clara de expectativas de relación." }
+      { text: "Photo and identity profile verification." },
+      { text: "Initial compatibility and interests test." },
+      { text: "Clear definition of relationship expectations." }
     ],
-    objective: "construir una carta de presentación auténtica e honesta."
+    objective: "build an authentic and honest presentation card."
   },
   {
     id: 2,
-    tag: "ETAPA 2",
-    title: "Algoritmo & Emparejamiento",
-    description: "Nuestro sistema busca coincidencia de valores, estilo de vida y pasiones compartidas.",
+    tag: "STAGE 2",
+    title: "Algorithm & Matching",
+    description: "Our system matches values, lifestyle, and shared passions.",
     icon: Sparkles,
-    supportText: "¿Cómo Match App te apoya en esta fase?",
+    supportText: "How does Klick support you in this stage?",
     bullets: [
-      { text: "Sugerencias diarias alineadas a tus preferencias." },
-      { text: "Filtros por ubicación, cultura e idiomas." },
-      { text: "Ver a quién le gustas (disponible en el plan Pro)." }
+      { text: "Daily suggestions aligned with your preferences." },
+      { text: "Location, culture, and language filters." },
+      { text: "See who likes you (available on the Pro plan)." }
     ],
-    objective: "descubrir perfiles con verdadera afinidad."
+    objective: "discover profiles with true affinity."
   },
   {
     id: 3,
-    tag: "ETAPA 3",
-    title: "Conversación & Conexión Directa",
-    description: "Inicia chats fluidos y seguros sin barreras ni rodeos.",
+    tag: "STAGE 3",
+    title: "Conversation & Direct Connection",
+    description: "Start fluid and safe chats without barriers or detours.",
     icon: MessageSquare,
-    supportText: "¿Cómo Match App te apoya en esta fase?",
+    supportText: "How does Klick support you in this stage?",
     bullets: [
-      { text: "Mensajería directa e instantánea." },
-      { text: "Intercambio cultural y de experiencias." },
-      { text: "Consejos de comunicación fluida y respetuosa." }
+      { text: "Direct and instant messaging." },
+      { text: "Cultural exchange and shared experiences." },
+      { text: "Fluid and respectful communication tips." }
     ],
-    objective: "crear una chispa real y construir confianza mutua."
+    objective: "create a real spark and build mutual trust."
   },
   {
     id: 4,
-    tag: "ETAPA 4",
-    title: "La Cita & Encuentro Real",
-    description: "Da el paso hacia un encuentro seguro y memorable.",
+    tag: "STAGE 4",
+    title: "The Date & Real Meeting",
+    description: "Take the step toward a safe and memorable meeting.",
     icon: Heart,
-    supportText: "¿Cómo Match App te apoya en esta fase?",
+    supportText: "How does Klick support you in this stage?",
     bullets: [
-      { text: "Consejos de seguridad para la primera cita." },
-      { text: "Recomendación de lugares y experiencias." },
-      { text: "Comunidad segura enfocada en relaciones duraderas." }
+      { text: "Safety tips for the first date." },
+      { text: "Venue and experience recommendations." },
+      { text: "Safe community focused on lasting relationships." }
     ],
-    objective: "conocer a tu pareja ideal en el mundo real."
+    objective: "meet your ideal partner in the real world."
   }
 ];
 
@@ -77,11 +77,11 @@ export default function StageDetails() {
         {/* Header */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-6xl font-medium tracking-tight mb-4 text-slate-900">
-            ¡El camino hacia <br />
-            tu pareja ideal!
+            The path to <br />
+            your ideal partner!
           </h2>
           <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-2xl">
-            Conoce los pasos sencillos para conectar de forma auténtica, honesta y segura en Match App.
+            Learn the simple steps to connect authentically, honestly, and safely on Klick.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function StageDetails() {
                     <div className="mt-auto flex items-start gap-2 pt-2">
                       <Target className="w-4 h-4 text-[#9b4dca] shrink-0 mt-0.5" />
                       <p className="text-[11px] text-slate-600 leading-relaxed">
-                        <strong className="text-slate-800 font-medium">Objetivo: </strong> 
+                        <strong className="text-slate-800 font-medium">Objective: </strong> 
                         {stage.objective}
                       </p>
                     </div>

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://udreamms.com";
-export const SITE_NAME = "Match Dating";
+export const SITE_NAME = "Klick";
 
 /** URL estable del logo (Google Search favicon + schema.org). */
 export const SITE_LOGO_PATH = "/matchapp-logo-circular.png";
 export const SITE_LOGO_URL = `${SITE_URL}${SITE_LOGO_PATH}`;
 
 export const DEFAULT_DESCRIPTION =
-  "Asesoría experta para visas, estudios y nueva vida en Estados Unidos. Tecnología y soporte humano en un solo lugar.";
+  "Expert guidance for visas, studies, and a new life in the United States. Technology and human support in one place.";
 
 export const NOINDEX_ROBOTS: Metadata["robots"] = {
   index: false,
@@ -45,71 +45,71 @@ const PAGE_SEO: Record<
   { title: string; description: string }
 > = {
   "/": {
-    title: "Match | Dating App",
+    title: "Klick | Dating App",
     description: DEFAULT_DESCRIPTION,
   },
   "/about": {
-    title: "Acerca de Match App",
+    title: "About Klick",
     description:
-      "Conoce la historia, valores y equipo detrás de Match App. Transparencia y acompañamiento en tu experiencia.",
+      "Learn about the history, values, and team behind Klick. Transparency and guidance throughout your experience.",
   },
   "/destinos": {
-    title: "Destinos en USA",
+    title: "US Destinations",
     description:
-      "Explora ciudades y destinos populares para estudiar, trabajar y vivir con Match App.",
+      "Explore popular cities and destinations to study, work, and live with Klick.",
   },
   "/courses": {
-    title: "Cursos de Inglés en USA",
+    title: "English Courses in USA",
     description:
-      "Programas de inglés en escuelas aliadas en Estados Unidos. Planifica tu formación con asesoría Match App.",
+      "English programs at partner schools in the United States. Plan your education with Klick guidance.",
   },
   "/services": {
-    title: "Servicios en USA",
+    title: "Services in USA",
     description:
-      "Vivienda, banca, SIM, transporte y más. Servicios esenciales para tu llegada.",
+      "Housing, banking, SIM cards, transport, and more. Essential services for your arrival.",
   },
   "/brochures": {
-    title: "Brochures y Guías",
+    title: "Brochures and Guides",
     description:
-      "Descarga material informativo y da el primer paso en tu proceso con Match App.",
+      "Download informational materials and take the first step in your process with Klick.",
   },
   "/contact": {
-    title: "Contáctanos",
+    title: "Contact Us",
     description:
-      "Habla con el equipo Match App. Resolvemos dudas sobre visas, estudios y tu plan.",
+      "Speak with the Klick team. We resolve doubts about visas, studies, and your plan.",
   },
   "/partnerships": {
-    title: "Alianzas Institucionales",
+    title: "Institutional Partnerships",
     description:
-      "Universidades y escuelas aliadas. Programas de partnership con Match App.",
+      "Partner universities and schools. Partnership programs with Klick.",
   },
   "/referrals": {
-    title: "Programa de Referidos",
+    title: "Referral Program",
     description:
-      "Recomienda Match App y gana beneficios. Comparte tu experiencia con nuestra comunidad.",
+      "Recommend Klick and earn rewards. Share your experience with our community.",
   },
   "/faqs": {
-    title: "Preguntas Frecuentes",
+    title: "Frequently Asked Questions",
     description:
-      "Respuestas sobre visas, pagos, procesos y soporte.",
+      "Answers about visas, payments, processes, and support.",
   },
   "/privacidad": {
-    title: "Política de Privacidad",
-    description: "Política de privacidad y tratamiento de datos de Match App.",
+    title: "Privacy Policy",
+    description: "Privacy policy and data processing of Klick.",
   },
   "/terminos": {
-    title: "Términos y Condiciones",
-    description: "Términos y condiciones de uso de los servicios Match App.",
+    title: "Terms and Conditions",
+    description: "Terms and conditions of use for Klick services.",
   },
   "/visas/student": {
-    title: "Visa de Estudiante F-1",
+    title: "F-1 Student Visa",
     description:
-      "Planes y asesoría para visa de estudiante F-1. Estudia en USA con acompañamiento experto Match App.",
+      "Plans and guidance for F-1 student visas. Study in the US with expert Klick support.",
   },
   "/visas/tourist": {
-    title: "Visa de Turismo B1/B2",
+    title: "B1/B2 Tourist Visa",
     description:
-      "Asesoría para visa de turismo B1/B2. Prepara tu viaje a Estados Unidos con confianza.",
+      "Guidance for B1/B2 tourist visas. Prepare your trip to the United States with confidence.",
   },
 };
 
@@ -136,7 +136,7 @@ export function pageMetadata(
       description: entry.description,
       url,
       siteName: SITE_NAME,
-      locale: "es_US",
+      locale: "en_US",
       type: "website",
       images: [
         {
@@ -166,7 +166,7 @@ export function noindexMetadata(title: string): Metadata {
 export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Match | Dating App",
+    default: "Klick | Dating App",
     template: "%s",
   },
   description: DEFAULT_DESCRIPTION,
@@ -176,10 +176,10 @@ export const rootMetadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_US",
+    locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "Match | Dating App",
+    title: "Klick | Dating App",
     description: DEFAULT_DESCRIPTION,
     images: [
       {
@@ -192,7 +192,7 @@ export const rootMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Match | Dating App",
+    title: "Klick | Dating App",
     description: DEFAULT_DESCRIPTION,
   },
   robots: {

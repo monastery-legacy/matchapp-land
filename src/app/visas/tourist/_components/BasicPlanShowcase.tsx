@@ -9,24 +9,24 @@ import { useRouter } from "next/navigation";
 const features = [
     {
         id: "auditoria",
-        title: "Auditoría de Perfil Migratorio",
-        description: "Analizamos tus puntos fuertes y débiles de forma personalizada.",
+        title: "Profile & Match Audit",
+        description: "Personalized analysis of your profile strengths and compatibility goals.",
         icon: Users,
         color: "bg-red-50 text-red-600",
         image: "/assets/generated/tourist_basic_showcase.png"
     },
     {
         id: "gestion",
-        title: "Gestión Completa de Visa B1/B2",
-        description: "Nos encargamos del formulario DS-160 y toda la burocracia por ti.",
+        title: "Complete Process Management",
+        description: "We handle form filings and administrative details for you.",
         icon: FileText,
         color: "bg-yellow-50 text-yellow-600",
         image: "/assets/generated/tourist_basic_showcase.png"
     },
     {
         id: "simulacion",
-        title: "Simulación de Entrevista 1 a 1",
-        description: "Acompañamiento personalizado para que vayas con total seguridad.",
+        title: "1-on-1 Prep & Coaching",
+        description: "Tailored 1-on-1 coaching to prepare you with confidence.",
         icon: Video,
         color: "bg-blue-50 text-blue-600",
         image: "/assets/generated/tourist_basic_showcase.png"
@@ -53,14 +53,14 @@ export default function BasicPlanShowcase() {
                         {/* Text Content */}
                         <div className="mb-8">
                             <div className="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-white/10 text-slate-300 font-medium text-[9px] uppercase tracking-widest mb-4">
-                                Opción Esencial
+                                Essential Option
                             </div>
                             <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tighter text-white leading-[1.1]">
-                                Empieza con el pie derecho<br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca]">Plan Básico</span>
+                                Start Off Right<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca]">Basic Plan</span>
                             </h2>
                             <p className="mt-4 text-sm text-slate-300 font-normal leading-relaxed max-w-sm">
-                                Nuestra gestión incluye auditoría, llenado de formularios y preparación para la entrevista consular con acompañamiento 1 a 1.
+                                Includes profile audit, application filing, and 1-on-1 interview preparation coaching.
                             </p>
                         </div>
 
@@ -110,17 +110,17 @@ export default function BasicPlanShowcase() {
                         {/* Buttons moved to the bottom */}
                         <div className="mt-6 lg:mt-auto flex flex-col sm:flex-row gap-4 self-start w-full sm:w-auto">
                             <Button
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/80 hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                                 onClick={() => router.push('/instructions-payment-tourist?plan=basico')}
                             >
-                                Elegir Plan Básico
+                                Choose Basic Plan
                             </Button>
                             <Button
                                 asChild
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/80 hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                             >
                                 <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3X9M9IxjU-0QyoLH4nwKpy5WjuxDwM-KQC0QrZS_Mcri7IKWXEPWn4s5eOtySu9m_EFqZQgpv0" target="_blank" rel="noopener noreferrer">
-                                    Agendar reunión virtual
+                                    Schedule Virtual Meeting
                                 </a>
                             </Button>
                         </div>
@@ -158,7 +158,7 @@ export default function BasicPlanShowcase() {
                     <div className="h-px w-12 bg-white/20" />
                     <p className="text-sm font-medium text-slate-400 flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
-                        Gestión garantizada por expertos Match App
+                        Guaranteed management by Klick experts
                     </p>
                     <div className="h-px w-12 bg-white/20" />
                 </div>

@@ -2,40 +2,97 @@
 
 import { Button } from '@/components/ui/button';
 import { sendMetaEvent } from "@/lib/meta-events";
+import { ShieldCheck, HeartHandshake, UserCheck, Globe2 } from "lucide-react";
 
 export default function FreeTrainingShowcase() {
+    const features = [
+        {
+            icon: ShieldCheck,
+            title: "Dating Safety & Protection",
+            description: "Essential resources and practical security guidelines to connect safely with confidence."
+        },
+        {
+            icon: HeartHandshake,
+            title: "Assertive Communication",
+            description: "Master emotional intelligence and express your genuine intentions with clarity and respect."
+        },
+        {
+            icon: UserCheck,
+            title: "Honest Profile Creation",
+            description: "Learn to build an attractive, authentic profile that accurately reflects your unique personality."
+        },
+        {
+            icon: Globe2,
+            title: "Cross-Cultural Affinity",
+            description: "Understand dating culture across different regions to build deep, meaningful relationships."
+        }
+    ];
+
     return (
-        <section className="pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-20 lg:pb-24 bg-white text-black overflow-hidden font-sans">
-            <div className="container mx-auto px-6 max-w-4xl">
-                <div className="flex flex-col items-center text-center">
-                    
-                    {/* Premium Capsule Tag */}
-                    <div className="w-fit mb-6 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md select-none">
-                        RECURSOS Y GUÍAS GRATUITAS
-                    </div>
-                    
-                    <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-                        <span className="text-3xl md:text-4xl lg:text-5xl block mb-2 font-medium">Guías de Citas & Seguridad</span>
-                        <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Para construir relaciones sólidas e honestas</span>
+        <section className="py-16 md:py-24 bg-white text-black overflow-hidden font-sans">
+            <div className="container mx-auto px-6 max-w-[1400px]">
+                
+                {/* Header Section */}
+                <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 md:mb-16">
+                    <h2 className="font-normal tracking-tight text-black leading-[1.15]">
+                        <span className="text-3xl md:text-5xl lg:text-6xl block mb-3 font-medium">
+                            Dating & Safety Guides
+                        </span>
+                        <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">
+                            To build strong and honest relationships
+                        </span>
                     </h2>
                     
-                    <p className="text-gray-600 text-base leading-[1.7] font-light max-w-2xl">
-                        Accede de forma inmediata a nuestros recursos sobre seguridad en citas, comunicación asertiva, inteligencia emocional y afinidad de intereses. Aprende a crear un perfil atractivo y honesto que refleje fielmente tu personalidad.<br /><br />
-                        Una recopilación práctica de herramientas diseñadas para que conectes con confianza, conozcas la cultura de citas de diferentes regiones y construyas relaciones auténticas.
+                    <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed font-light max-w-2xl">
+                        Gain immediate access to our resources on dating safety, assertive communication, emotional intelligence, and interest affinity. Learn to create an attractive and honest profile that accurately reflects your personality.
+                    </p>
+                </div>
+
+                {/* 4 Feature Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mb-14 md:mb-16">
+                    {features.map((feature, idx) => {
+                        const Icon = feature.icon;
+                        return (
+                            <div 
+                                key={idx}
+                                className="bg-slate-50/70 border border-black/10 rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:border-black/30 hover:bg-slate-50 transition-all duration-300 group shadow-sm hover:shadow-md hover:-translate-y-1"
+                            >
+                                <div>
+                                    <div className="w-12 h-12 rounded-2xl border border-black/10 bg-white flex items-center justify-center mb-6 text-black group-hover:scale-110 transition-transform shadow-xs">
+                                        <Icon className="w-6 h-6 stroke-[1.5]" />
+                                    </div>
+                                    <h3 className="text-lg font-medium text-black mb-2 tracking-tight">
+                                        {feature.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed font-light">
+                                        {feature.description}
+                                    </p>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                {/* Bottom Highlight Callout & Action */}
+                <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+                    <p className="text-gray-600 text-base md:text-lg leading-relaxed font-light mb-8">
+                        A practical collection of tools designed so you can connect with confidence, understand dating culture across different regions, and build authentic relationships.
                     </p>
                     
-                    <Button asChild className="mt-8 w-64 px-5 py-2.5 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] border border-[#2d1b4e] text-white rounded-full hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">
+                    <Button asChild className="px-8 py-3 bg-transparent border border-black text-black rounded-full hover:bg-black/10 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm md:text-base font-medium">
                         <a 
                             href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             onClick={() => sendMetaEvent('Lead', { source: 'FreeTrainingShowcase: Encontrar Pareja' })} 
                         >
-                            Encontrar mi Pareja ahora
+                            Find my Partner now
                         </a>
                     </Button>
                 </div>
+
             </div>
         </section>
     );
 }
+

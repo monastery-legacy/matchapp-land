@@ -32,7 +32,7 @@ export default function RecursosPage() {
                 : "Recopilación de las preguntas frecuentes sobre turismo, fondos económicos e intenciones de retorno."}
             </p>
           </div>
-          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
+          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
             Descargar PDF
             <Download className="w-4 h-4" />
           </Button>
@@ -51,7 +51,7 @@ export default function RecursosPage() {
                 : "Modelo de redacción y documentos de soporte sugeridos para probar tus vínculos de arraigo."}
             </p>
           </div>
-          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
+          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
             Descargar DOCX
             <Download className="w-4 h-4" />
           </Button>
@@ -70,7 +70,7 @@ export default function RecursosPage() {
                 : "Lista de verificación interactiva de lazos familiares, financieros y laborales para tu cita."}
             </p>
           </div>
-          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
+          <Button className="w-full h-10 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2">
             Descargar PDF
             <Download className="w-4 h-4" />
           </Button>

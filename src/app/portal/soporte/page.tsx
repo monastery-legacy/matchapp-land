@@ -27,7 +27,7 @@ export default function SoportePage() {
             href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-full inline-flex h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] text-white text-xs font-normal tracking-widest uppercase items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
+            className="w-full inline-flex h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 text-white text-xs font-normal tracking-widest uppercase items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
           >
             Iniciar Chat WhatsApp
             <ArrowRight className="w-4 h-4" />
@@ -48,7 +48,7 @@ export default function SoportePage() {
             href="https://calendar.app.google/uAhHFp3YC2T1PbGU6"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full inline-flex h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] text-white text-xs font-normal tracking-widest uppercase items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
+            className="w-full inline-flex h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 text-white text-xs font-normal tracking-widest uppercase items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg"
           >
             Agendar Videocita
             <ArrowRight className="w-4 h-4" />

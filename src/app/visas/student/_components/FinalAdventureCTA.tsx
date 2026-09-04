@@ -27,28 +27,28 @@ export default function FinalAdventureCTA() {
                             <Button
                                 size="lg"
                                 onClick={scrollToPlanes}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-slate-900/10 hover:scale-105"
                             >
                                 Plan Esencial
                             </Button>
                             <Button
                                 size="lg"
                                 onClick={scrollToPlanes}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-slate-900/10 hover:scale-105"
                             >
                                 Plan Pro
                             </Button>
                             <Button
                                 size="lg"
                                 onClick={scrollToPlanes}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-slate-900/10 hover:scale-105"
                             >
                                 Plan Elite
                             </Button>
                             <Button
                                 size="lg"
                                 onClick={scrollToPlanes}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-lg transition-all duration-300 active:scale-95 border-2 bg-transparent text-slate-900 border-slate-900 hover:bg-slate-900/10 hover:scale-105"
                             >
                                 All-Inclusive
                             </Button>

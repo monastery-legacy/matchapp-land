@@ -156,7 +156,7 @@ export default function YouTubeStoryCards({
                   <div className="flex items-center gap-2 mb-3">
                     <img
                       src="/icons/new-icon-udreamms.png"
-                      alt="Match App"
+                      alt="Klick"
                       width={20}
                       height={20}
                       className="w-5 h-5 object-contain"
@@ -177,7 +177,7 @@ export default function YouTubeStoryCards({
 
         <div className="flex justify-center mt-16 md:mt-32">
           <Button
-            className="rounded-full bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-medium px-10 py-6 text-lg shadow-xl shadow-orange-500/20 transition-all hover:scale-105 flex items-center gap-2"
+            className="rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 font-medium px-10 py-6 text-lg transition-all hover:scale-105 flex items-center gap-2"
             onClick={() => window.open(instagramHref, "_blank", "noopener,noreferrer")}
           >
             Ver más en Instagram

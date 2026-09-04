@@ -110,12 +110,12 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
 
   const handleStartStripeCheckout = useCallback(async () => {
     if (cart.length === 0) {
-      toast.error('Tu carrito está vacío.');
+      toast.error('Your cart is empty.');
       return;
     }
     const email = checkoutEmail;
     if (!email?.includes('@')) {
-      toast.error('Necesitamos tu correo para procesar el pago.');
+      toast.error('We need your email to process the payment.');
       return;
     }
 
@@ -129,11 +129,11 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
       });
       const data = await response.json();
       if (!response.ok) {
-        throw new Error(data.error || 'No se pudo iniciar el pago en Stripe.');
+        throw new Error(data.error || 'Could not initialize Stripe payment.');
       }
       window.location.href = data.url;
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : 'No se pudo iniciar el pago.';
+      const message = error instanceof Error ? error.message : 'Could not start payment.';
       toast.error(message);
       setStripeRedirecting(false);
     }
@@ -204,7 +204,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
       <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center font-sans">
         <div className="flex flex-col items-center gap-3">
           <div className="w-8 h-8 rounded-full border-t-2 border-purple-500 border-r-2 border-r-transparent animate-spin"></div>
-          <span className="text-xs tracking-widest text-white/40 uppercase font-normal">Cargando Portal...</span>
+          <span className="text-xs tracking-widest text-white/40 uppercase font-normal">Loading Portal...</span>
         </div>
       </div>
     );
@@ -241,9 +241,9 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
             </button>
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('/')}>
               <div className="w-7 h-7 relative">
-                <img src="/matchapp-logo-circular.png" alt="Match Dating" className="object-cover w-full h-full rounded-full drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]" />
+                <img src="/matchapp-logo-circular.png" alt="Klick" className="object-cover w-full h-full rounded-full drop-shadow-[0_0_10px_rgba(168,85,247,0.4)]" />
               </div>
-              <span className="text-lg font-normal tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">Match Dating</span>
+              <span className="text-lg font-normal tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">Klick</span>
             </div>
           </div>
 
@@ -258,7 +258,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                 activeTopSection === 'visa-estudiante' ? "text-purple-400 bg-white/5" : "text-white/60 hover:text-white hover:bg-white/5"
               }`}
             >
-              Visa de Estudiante F-1
+              F-1 Student Visa
               {activeTopSection === 'visa-estudiante' && (
                 <motion.div 
                   layoutId="activeTabIndicator" 
@@ -276,7 +276,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                 activeTopSection === 'visa-turista' ? "text-purple-400 bg-white/5" : "text-white/60 hover:text-white hover:bg-white/5"
               }`}
             >
-              Visa de Turista B-2
+              B-2 Tourist Visa
               {activeTopSection === 'visa-turista' && (
                 <motion.div 
                   layoutId="activeTabIndicator" 
@@ -294,7 +294,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                 activeTopSection === 'experto' ? "text-purple-400 bg-white/5" : "text-white/60 hover:text-white hover:bg-white/5"
               }`}
             >
-              Hablar con un experto
+              Speak with an Expert
               {activeTopSection === 'experto' && (
                 <motion.div 
                   layoutId="activeTabIndicator" 
@@ -336,9 +336,9 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                       className="absolute right-0 mt-3 w-80 rounded-2xl bg-[#0d0d11]/95 backdrop-blur-xl border border-white/10 shadow-2xl p-4 z-50 space-y-4"
                     >
                       <div>
-                        <p className="text-xs font-normal tracking-widest text-white/40 uppercase mb-2">Carrito de Compras</p>
+                        <p className="text-xs font-normal tracking-widest text-white/40 uppercase mb-2">Shopping Cart</p>
                         {cart.length === 0 ? (
-                          <p className="text-xs text-white/50 py-4 text-center">Tu carrito está vacío</p>
+                          <p className="text-xs text-white/50 py-4 text-center">Your cart is empty</p>
                         ) : (
                           <div className="space-y-3 max-h-60 overflow-y-auto pr-1 no-scrollbar">
                             {cart.map((itemId) => {
@@ -354,7 +354,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                                     onClick={() => removeFromCart(itemId)}
                                     className="text-[10px] text-red-400 hover:text-red-300 uppercase tracking-wider font-semibold shrink-0"
                                   >
-                                    Quitar
+                                    Remove
                                   </button>
                                 </div>
                               );
@@ -374,9 +374,9 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                           </div>
                           <Button
                             onClick={handleCheckout}
-                            className="w-full h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
+                            className="w-full h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
                           >
-                            Realizar Pago
+                            Proceed to Checkout
                           </Button>
                         </>
                       )}
@@ -421,8 +421,8 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                       className="absolute right-0 mt-3 w-64 rounded-2xl bg-[#0d0d11]/95 backdrop-blur-xl border border-white/10 shadow-2xl p-4 z-50 space-y-3"
                     >
                       <div className="px-1 py-1">
-                        <p className="text-xs font-normal tracking-widest text-white/40 uppercase mb-1">Tu Cuenta</p>
-                        <p className="text-sm font-normal truncate text-white">{user.displayName || "Usuario Udreamms"}</p>
+                        <p className="text-xs font-normal tracking-widest text-white/40 uppercase mb-1">Your Account</p>
+                        <p className="text-sm font-normal truncate text-white">{user.displayName || "Klick User"}</p>
                         <p className="text-xs truncate text-white/50">{user.email}</p>
                       </div>
 
@@ -437,7 +437,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                           className="w-full h-10 rounded-xl hover:bg-white/5 transition-colors flex items-center gap-3 px-3 text-left text-xs font-normal text-white/80 hover:text-white"
                         >
                           <Settings className="w-4 h-4 text-white" />
-                          Administrar Perfil
+                          Manage Profile
                         </button>
                         
                         <button
@@ -448,7 +448,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                           className="w-full h-10 rounded-xl hover:bg-red-500/10 transition-colors flex items-center gap-3 px-3 text-left text-xs font-normal text-red-400 hover:text-red-300"
                         >
                           <LogOut className="w-4 h-4" />
-                          Cerrar Sesión
+                          Sign Out
                         </button>
                       </div>
                     </motion.div>
@@ -472,7 +472,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
             activeTopSection === 'visa-estudiante' ? "text-purple-400 bg-transparent border border-purple-500/40" : "text-white/40 border border-transparent"
           }`}
         >
-          Visa de Estudiante F-1
+          F-1 Student Visa
         </button>
         <button
           onClick={() => {
@@ -483,7 +483,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
             activeTopSection === 'visa-turista' ? "text-purple-400 bg-transparent border border-purple-500/40" : "text-white/40 border border-transparent"
           }`}
         >
-          Visa de Turista B-2
+          B-2 Tourist Visa
         </button>
         <button
           onClick={() => {
@@ -494,7 +494,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
             activeTopSection === 'experto' ? "text-purple-400 bg-transparent border border-purple-500/40" : "text-white/40 border border-transparent"
           }`}
         >
-          Experto
+          Expert
         </button>
       </div>
 
@@ -530,7 +530,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
 
       {/* FOOTER */}
       <footer className="w-full shrink-0 border-t border-white/5 py-6 mt-12 relative z-10 text-center text-[10px] tracking-[0.2em] uppercase text-white/30">
-        Udreamms Portal © 2026. Todos los derechos reservados.
+        Klick Portal © 2026. All rights reserved.
       </footer>
 
       {/* ACCOUNT MANAGEMENT MODAL */}
@@ -555,14 +555,14 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
               className="bg-[#0d0d11] border border-white/10 rounded-3xl p-6 md:p-8 w-full max-w-md shadow-2xl relative z-10 space-y-6"
             >
               <div className="space-y-1">
-                <h3 className="text-xl font-normal text-white">Administrar Perfil</h3>
-                <p className="text-xs text-white/40">Visualiza y actualiza la información de tu cuenta.</p>
+                <h3 className="text-xl font-normal text-white">Manage Profile</h3>
+                <p className="text-xs text-white/40">View and update your account information.</p>
               </div>
 
               <div className="space-y-4">
                 <form onSubmit={handleUpdateProfile} className="space-y-4">
                   <div className="space-y-1">
-                    <label className="text-[10px] font-normal text-white/40 uppercase tracking-wider block">Correo Electrónico</label>
+                    <label className="text-[10px] font-normal text-white/40 uppercase tracking-wider block">Email Address</label>
                     <Input
                       type="text"
                       disabled
@@ -572,11 +572,11 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-[10px] font-normal text-white/40 uppercase tracking-wider block">Nombre de Perfil</label>
+                    <label className="text-[10px] font-normal text-white/40 uppercase tracking-wider block">Profile Name</label>
                     <Input
                       type="text"
                       required
-                      placeholder="Tu nombre completo"
+                      placeholder="Your full name"
                       value={newDisplayName}
                       onChange={(e) => setNewDisplayName(e.target.value)}
                       className="bg-white/5 border-white/10 focus:border-purple-500/60 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-purple-500/60 rounded-full h-11 text-white text-xs tracking-wide px-6 text-center transition-all"
@@ -589,14 +589,14 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                       onClick={() => setIsProfileModalOpen(false)}
                       className="flex-1 h-11 rounded-full bg-transparent border border-white/20 text-white hover:bg-white/5 hover:border-white/40 hover:scale-105 active:scale-95 transition-all duration-300 text-xs font-normal uppercase"
                     >
-                      Cancelar
+                      Cancel
                     </Button>
                     <Button
                       type="submit"
                       disabled={savingProfile}
-                      className="flex-1 h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal uppercase"
+                      className="flex-1 h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal uppercase"
                     >
-                      {savingProfile ? "Guardando..." : "Guardar Cambios"}
+                      {savingProfile ? "Saving..." : "Save Changes"}
                     </Button>
                   </div>
                 </form>
@@ -617,7 +617,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                       <Button
                         type="button"
                         onClick={handleApplyUnlockCode}
-                        className="h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] px-4 text-xs font-normal uppercase transition-all duration-300 hover:scale-105 active:scale-95"
+                        className="h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 px-4 text-xs font-normal uppercase transition-all duration-300 hover:scale-105 active:scale-95"
                       >
                         Aplicar
                       </Button>
@@ -698,15 +698,15 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
               {/* Header */}
               <div className="flex justify-between items-start border-b border-white/5 pb-4">
                 <div>
-                  <h3 className="text-xl font-normal text-white">Pasarela de Pago Segura</h3>
-                  <p className="text-xs text-white/40">Sigue los pasos para completar tu orden.</p>
+                  <h3 className="text-xl font-normal text-white">Secure Payment Gateway</h3>
+                  <p className="text-xs text-white/40">Follow the steps to complete your order.</p>
                 </div>
                 {!isProcessingCrypto && !paymentApproved && (
                   <button
                     onClick={() => setIsCheckoutOpen(false)}
                     className="text-xs text-white/40 hover:text-white uppercase tracking-wider font-semibold"
                   >
-                    Cerrar
+                    Close
                   </button>
                 )}
               </div>
@@ -716,17 +716,17 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                 <div className="text-center py-8 space-y-6">
                   <CheckCircle2 className="w-16 h-16 text-purple-400 mx-auto animate-pulse" />
                   <div className="space-y-2">
-                    <h4 className="text-2xl font-normal text-white">¡Pago aprobado con éxito!</h4>
+                    <h4 className="text-2xl font-normal text-white">Payment Approved!</h4>
                     <p className="text-xs text-white/50 max-w-md mx-auto">
-                      Tu transacción fue confirmada y tus servicios han sido desbloqueados en la plataforma.
+                      Your transaction was confirmed and your services have been unlocked on the platform.
                     </p>
                   </div>
                   <div className="bg-white/5 border border-white/10 rounded-2xl p-4 max-w-md mx-auto text-left space-y-2">
-                    <p className="text-[10px] uppercase tracking-widest text-white/40">ID de Orden</p>
+                    <p className="text-[10px] uppercase tracking-widest text-white/40">Order ID</p>
                     <p className="text-xs font-mono text-white/80 break-all">{approvedOrder.requestId}</p>
                     {approvedOrder.email && (
                       <p className="text-xs text-white/40">
-                        Comprobante enviado a: <span className="text-white/80">{approvedOrder.email}</span>
+                        Receipt sent to: <span className="text-white/80">{approvedOrder.email}</span>
                       </p>
                     )}
                   </div>
@@ -737,9 +737,9 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                       setApprovedOrder(null);
                       router.push('/portal/proceso');
                     }}
-                    className="h-11 px-8 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] text-xs font-normal uppercase"
+                    className="h-11 px-8 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 text-xs font-normal uppercase"
                   >
-                    Ir a mi proceso
+                    Go to my dashboard
                   </Button>
                 </div>
               ) : (
@@ -748,7 +748,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                   {/* Left Column: Cart Overview & Method Selector */}
                   <div className="space-y-6">
                     <div className="space-y-3">
-                      <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Resumen del Carrito</p>
+                      <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Cart Summary</p>
                       <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
                         {cart.map((itemId) => {
                           const item = cartItemsConfig[itemId];
@@ -764,7 +764,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                         })}
                       </div>
                       <div className="pt-2 border-t border-white/5 flex justify-between items-center">
-                        <span className="text-xs text-white/50 uppercase tracking-wider">Total a pagar</span>
+                        <span className="text-xs text-white/50 uppercase tracking-wider">Total Due</span>
                         <span className="text-lg font-semibold text-white">
                           ${cart.reduce((total, itemId) => total + (getItemPrice(itemId, checkoutMethod) || 0), 0).toFixed(2)} USD
                         </span>
@@ -772,7 +772,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                     </div>
 
                     <div className="space-y-3">
-                      <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Método de Pago</p>
+                      <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Payment Method</p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <button
                           onClick={() => !hasCryptoDisabled && setCheckoutMethod('crypto')}
@@ -787,10 +787,10 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                         >
                           <div className="flex items-center gap-2">
                             <Wallet className={`w-4 h-4 ${hasCryptoDisabled ? 'text-white/25' : 'text-purple-400'}`} />
-                            <span className={`text-xs font-semibold ${hasCryptoDisabled ? 'text-white/40' : 'text-white'}`}>Pagar con Crypto</span>
+                            <span className={`text-xs font-semibold ${hasCryptoDisabled ? 'text-white/40' : 'text-white'}`}>Pay with Crypto</span>
                           </div>
                           <p className="text-[9px] text-white/50 leading-relaxed font-light">
-                            {hasCryptoDisabled ? "No disponible para este plan" : "USDC, USDT, SOL, LXR"}
+                            {hasCryptoDisabled ? "Not available for this plan" : "USDC, USDT, SOL, LXR"}
                           </p>
                         </button>
 
@@ -804,7 +804,7 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                         >
                           <div className="flex items-center gap-2">
                             <CreditCard className="w-4 h-4 text-purple-400" />
-                            <span className="text-xs font-semibold text-white">Pagar con Tarjeta</span>
+                            <span className="text-xs font-semibold text-white">Pay with Card</span>
                           </div>
                           <p className="text-[9px] text-white/50 leading-relaxed">Visa, Mastercard, Amex</p>
                         </button>
@@ -817,18 +817,18 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                     {!checkoutMethod ? (
                       <div className="flex flex-col items-center justify-center h-full text-center py-12 text-white/40 space-y-3">
                         <ShieldCheck className="w-10 h-10 text-white/20" />
-                        <p className="text-xs">Selecciona un método de pago a la izquierda para continuar.</p>
+                        <p className="text-xs">Select a payment method on the left to continue.</p>
                       </div>
                     ) : checkoutMethod === 'crypto' ? (
                       <div className="space-y-4">
                         <div className="space-y-2">
-                          <p className="text-xs font-semibold text-white">1. Datos de Contacto</p>
+                          <p className="text-xs font-semibold text-white">1. Contact Details</p>
                           <BillingForm initialEmail={user.email || ''} onDataChange={setBillingData} onValidChange={setIsBillingValid} />
                         </div>
 
                         {checkoutSessionId && (
                           <div className="space-y-2 pt-2">
-                            <p className="text-xs font-semibold text-white">2. Escanea y Realiza el Pago</p>
+                            <p className="text-xs font-semibold text-white">2. Scan & Complete Payment</p>
                             <CryptoPaymentTabs
                               plan={cryptoCheckoutPlan}
                               cartItems={cart.length > 1 ? cart : undefined}
@@ -854,18 +854,18 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                     ) : (
                       <div className="space-y-6">
                         <div className="space-y-2">
-                          <p className="text-xs font-semibold text-white font-medium">Pago con Tarjeta a través de Stripe</p>
+                          <p className="text-xs font-semibold text-white font-medium">Card Payment via Stripe</p>
                           <p className="text-xs text-white/50 leading-relaxed">
-                            Haz clic en el botón inferior para ser redirigido a la pasarela encriptada oficial de Stripe y realizar tu pago de manera segura.
+                            Click the button below to be redirected to Stripe's secure payment gateway to complete your payment.
                           </p>
                         </div>
 
                         <div className="bg-white/5 border border-white/5 rounded-2xl p-4 space-y-4">
-                          <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Instrucciones</p>
+                          <p className="text-[10px] font-normal tracking-widest text-white/40 uppercase">Instructions</p>
                           <div className="space-y-2 text-xs text-white/70">
-                            <p>1. Presiona "Pagar en Stripe".</p>
-                            <p>2. Completa el pago con el mismo correo de tu cuenta.</p>
-                            <p>3. Al regresar, confirmamos automáticamente y desbloqueamos tu acceso.</p>
+                            <p>1. Click "Pay on Stripe".</p>
+                            <p>2. Complete payment using your account email.</p>
+                            <p>3. Upon return, your access will be automatically unlocked.</p>
                           </div>
                         </div>
 
@@ -873,10 +873,10 @@ function PortalLayoutContent({ children }: { children: React.ReactNode }) {
                           <Button
                             onClick={() => void handleStartStripeCheckout()}
                             disabled={stripeRedirecting || cart.length === 0}
-                            className="w-full h-11 rounded-full bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal uppercase flex items-center justify-center gap-2 text-white"
+                            className="w-full h-11 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal uppercase flex items-center justify-center gap-2"
                           >
                             <Lock className="w-4 h-4" />
-                            {stripeRedirecting ? 'Redirigiendo a Stripe...' : `Pagar $${checkoutTotal.toFixed(2)} en Stripe`}
+                            {stripeRedirecting ? 'Redirecting to Stripe...' : `Pay $${checkoutTotal.toFixed(2)} on Stripe`}
                           </Button>
                         </div>
                       </div>

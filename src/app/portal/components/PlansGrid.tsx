@@ -52,8 +52,8 @@ export default function PlansGrid({ variant }: PlansGridProps) {
               )}
 
               {plan.highlight && (
-                <div className="absolute top-0 right-1/2 translate-x-1/2 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] text-white text-[9px] font-semibold uppercase tracking-widest px-4 py-1 rounded-b-xl shadow-lg z-20">
-                  MÁS POPULAR
+                <div className="absolute top-0 right-1/2 translate-x-1/2 bg-transparent border border-white/40 text-white text-[9px] font-semibold uppercase tracking-widest px-4 py-1 rounded-b-xl shadow-lg z-20">
+                  MOST POPULAR
                 </div>
               )}
 
@@ -105,7 +105,7 @@ export default function PlansGrid({ variant }: PlansGridProps) {
                 ) : (
                   <Button
                     onClick={() => addToCart(plan.id)}
-                    className="w-full h-11 rounded-full bg-transparent border border-white/20 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg"
+                    className="w-full h-11 rounded-full bg-transparent border border-white/20 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg"
                   >
                     Añadir al carrito
                   </Button>

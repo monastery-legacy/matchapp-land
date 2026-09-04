@@ -16,20 +16,20 @@ export default function BookPromoSection() {
                     <div className="flex-1 text-center lg:text-left">
                         <FadeIn>
                             <h2 className="text-5xl md:text-6xl font-normal tracking-tight text-white leading-tight mb-6">
-                                ¿Te gustaría hacer el <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] font-normal">proceso por ti mismo?</span>
+                                Would you like to manage the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] font-normal">process yourself?</span>
                             </h2>
                             <p className="text-base text-slate-300 leading-relaxed mb-6">
-                                Match App creó este libro digital para guiarte paso a paso en tu proceso de visa, para que puedas hacerlo a tu ritmo y sin complicaciones.
+                                Klick created this digital guide to walk you step-by-step through your process at your own pace.
                             </p>
                             
                             <div className="mb-6 inline-block text-left w-full max-w-lg">
-                                <h3 className="text-xl font-medium text-white mb-4">Dentro del libro encontrarás:</h3>
+                                <h3 className="text-xl font-medium text-white mb-4">Inside the book you will find:</h3>
                                 <ul className="space-y-3">
                                     {[
-                                        "Links oficiales de todo el proceso migratorio",
-                                        "Paso a paso para completar correctamente tu información",
-                                        "Técnicas para responder las preguntas de la embajada",
-                                        "Y mucho más contenido práctico"
+                                        "Official links for the entire process",
+                                        "Step-by-step instructions to complete your information",
+                                        "Techniques to answer interview questions effectively",
+                                        "Practical guides and exclusive resources"
                                     ].map((item, i) => (
                                         <li key={i} className="flex items-start">
                                             <span className="text-sm text-slate-300 font-normal leading-relaxed">• {item}</span>
@@ -46,7 +46,7 @@ export default function BookPromoSection() {
                             <div className="relative w-full aspect-[4/5] mx-auto overflow-hidden">
                                 <img 
                                     src="/book-udreamms.jpeg" 
-                                    alt="Libro Digital Udreamms - Paso a paso para tu visa" 
+                                    alt="Digital Book Klick - Step by Step Guide" 
                                     className="w-full h-full object-cover block"
                                 />
                                 {/* Difuminado súper pesado para perder completamente los bordes en el fondo negro */}
@@ -56,9 +56,9 @@ export default function BookPromoSection() {
                         </ScaleIn>
 
                         <div className="mt-8 w-full flex justify-center">
-                            <Button asChild className="rounded-full px-8 py-3 w-full bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] border border-[#2d1b4e] hover:[transition-property:transform,box-shadow] hover:scale-105 text-white font-medium tracking-wide text-base transition-all active:scale-95 shadow-lg">
+                            <Button asChild className="rounded-full px-8 py-3 w-full bg-transparent border border-white/40 hover:bg-white/10 hover:border-white/80 text-white font-medium tracking-wide text-base transition-all active:scale-95 shadow-lg">
                                 <a href="/visas/student/book" target="_blank" rel="noopener noreferrer">
-                                    Obtener libro
+                                    Get Digital Book
                                 </a>
                             </Button>
                         </div>

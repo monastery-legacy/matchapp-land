@@ -119,14 +119,14 @@ export default function PremiumPlanShowcase() {
                         {/* Buttons moved to the bottom */}
                         <div className="mt-6 lg:mt-auto flex flex-col sm:flex-row gap-4 self-start w-full sm:w-auto">
                             <Button
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/60 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                                 onClick={() => router.push('/instructions-payment-tourist?plan=premium')}
                             >
                                 Elegir Plan Premium
                             </Button>
                             <Button
                                 asChild
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/60 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                             >
                                 <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3X9M9IxjU-0QyoLH4nwKpy5WjuxDwM-KQC0QrZS_Mcri7IKWXEPWn4s5eOtySu9m_EFqZQgpv0" target="_blank" rel="noopener noreferrer">
                                     Agendar reunión virtual

@@ -20,7 +20,7 @@ export default function TermsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-primary font-medium tracking-tight text-xl mb-4 block"
               >
-                Acuerdo Legal
+                Legal Agreement
               </motion.span>
 
               <motion.h1
@@ -29,8 +29,8 @@ export default function TermsPage() {
                 transition={{ delay: 0.1 }}
                 className="text-6xl md:text-8xl font-medium text-[#1d1d1f] tracking-tighter leading-[0.9] mb-8"
               >
-                Términos y <br />
-                Condiciones.
+                Terms and <br />
+                Conditions.
               </motion.h1>
 
               <motion.p
@@ -39,7 +39,7 @@ export default function TermsPage() {
                 transition={{ delay: 0.2 }}
                 className="text-xl md:text-2xl text-[#86868b] font-medium max-w-2xl leading-relaxed"
               >
-                Bienvenido a Match App LLC. Al utilizar nuestros servicios, usted acepta los términos descritos en este documento.
+                Welcome to Klick LLC. By using our services, you agree to the terms described in this document.
               </motion.p>
 
               <motion.div
@@ -48,7 +48,7 @@ export default function TermsPage() {
                 transition={{ delay: 0.3 }}
                 className="mt-8 text-sm font-medium text-slate-400 uppercase tracking-widest"
               >
-                Última actualización: Enero 2026
+                Last updated: January 2026
               </motion.div>
             </div>
           </div>
@@ -66,12 +66,12 @@ export default function TermsPage() {
                     <div className="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600">
                       <AlertTriangle className="w-7 h-7" />
                     </div>
-                    <h2 className="text-2xl font-medium text-amber-900 uppercase tracking-wider">Descargo Legal Importante</h2>
+                    <h2 className="text-2xl font-medium text-amber-900 uppercase tracking-wider">Important Legal Disclaimer</h2>
                   </div>
                   <div className="grid gap-6 text-amber-800/80 font-medium">
-                    <p><strong className="text-amber-900">No somos el Gobierno:</strong> Match App LLC es una entidad privada. NO estamos afiliados con USCIS ni con ninguna entidad gubernamental de USA.</p>
-                    <p><strong className="text-amber-900">No garantizamos Visas:</strong> La aprobación es decisión exclusiva de los oficiales consulares. No realizamos reembolsos basados en negaciones de visa.</p>
-                    <p><strong className="text-amber-900">No es Asesoría Legal:</strong> Nuestra orientación es estrictamente educativa y de acompañamiento logístico.</p>
+                    <p><strong className="text-amber-900">Not Government:</strong> Klick LLC is a private entity. We are NOT affiliated with USCIS or any US government agency.</p>
+                    <p><strong className="text-amber-900">No Visa Guarantee:</strong> Visa approval is at the sole discretion of consular officers. We do not offer refunds based on visa denials.</p>
+                    <p><strong className="text-amber-900">Not Legal Advice:</strong> Our guidance is strictly educational and logistical assistance.</p>
                   </div>
                 </div>
               </div>
@@ -80,14 +80,14 @@ export default function TermsPage() {
               <div className="space-y-8">
                 <h2 className="text-3xl font-medium text-[#1d1d1f] tracking-tight flex items-center gap-4">
                   <span className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary text-sm font-medium shadow-sm">02</span>
-                  Descripción de Servicios
+                  Service Description
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-6">
                   {[
-                    "Asesoría en aplicación escolar",
-                    "Llenado de formularios (F-1 / B1-B2)",
-                    "Simulación de entrevistas",
-                    "Gestión de vivienda y transporte"
+                    "School application guidance",
+                    "Form completion (F-1 / B1-B2)",
+                    "Interview simulations",
+                    "Housing and transportation management"
                   ].map((service, i) => (
                     <div key={i} className="flex items-center gap-3 p-4 rounded-2xl border border-slate-100 bg-slate-50 text-slate-700 font-medium">
                       <UserCheck className="w-5 h-5 text-primary" /> {service}
@@ -100,16 +100,16 @@ export default function TermsPage() {
               <div className="space-y-8">
                 <h2 className="text-3xl font-medium text-[#1d1d1f] tracking-tight flex items-center gap-4">
                   <span className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-primary text-sm font-medium shadow-sm">03</span>
-                  Pagos y Reembolsos
+                  Payments and Refunds
                 </h2>
                 <div className="p-10 rounded-[3rem] border border-slate-100 bg-white shadow-sm">
                   <div className="flex gap-6 items-start mb-8">
                     <CreditCard className="w-8 h-8 text-primary shrink-0" />
-                    <p className="text-[#86868b] font-medium leading-relaxed">Las tarifas por servicios de asesoría de Match App LLC no son reembolsables una vez que el servicio ha comenzado (ej: tras la primera asesoría o llenado de formulario).</p>
+                    <p className="text-[#86868b] font-medium leading-relaxed">Fees for Klick LLC guidance services are non-refundable once the service has begun (e.g., after the first consultation or form completion).</p>
                   </div>
                   <div className="flex gap-6 items-start">
                     <FileWarning className="w-8 h-8 text-primary shrink-0" />
-                    <p className="text-[#86868b] font-medium leading-relaxed">El estudiante es responsable del pago directo a terceros (tasas SEVIS, MRV Fee, boletos aéreos y alojamiento).</p>
+                    <p className="text-[#86868b] font-medium leading-relaxed">The applicant is responsible for direct payments to third parties (SEVIS fees, MRV fees, airfare, and accommodation).</p>
                   </div>
                 </div>
               </div>
@@ -119,14 +119,14 @@ export default function TermsPage() {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -mr-32 -mt-32" />
                 <div className="relative z-10">
                   <h2 className="text-3xl font-medium mb-6 tracking-tight flex items-center gap-4">
-                    <Scale className="w-8 h-8 text-primary" /> Ley Aplicable
+                    <Scale className="w-8 h-8 text-primary" /> Applicable Law
                   </h2>
                   <p className="text-slate-400 font-medium text-lg leading-relaxed mb-8">
-                    Estos términos se rigen por las leyes del Estado de Utah, Estados Unidos. Cualquier disputa se resolverá exclusivamente en los tribunales del Condado de Salt Lake, Utah.
+                    These terms are governed by the laws of the State of Utah, United States. Any dispute will be resolved exclusively in the courts of Salt Lake County, Utah.
                   </p>
                   <div className="flex items-center gap-4 text-primary font-medium">
                     <HelpCircle className="w-5 h-5" />
-                    <span>¿Dudas? +1 385 888 2799</span>
+                    <span>Questions? +1 385 888 2799</span>
                   </div>
                 </div>
               </div>

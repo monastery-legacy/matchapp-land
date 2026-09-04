@@ -19,42 +19,42 @@ import {
 
 const paths = [
   {
-    title: "Match Dating",
-    subtitle: "La forma sencilla y auténtica de conocer personas afines a ti con seguridad.",
+    title: "Klick",
+    subtitle: "The simple and authentic way to meet like-minded people safely.",
     features: [
-      { text: "Creación de Perfil Completo 360°", icon: Activity },
-      { text: "Algoritmo de Emparejamiento por Afinidades", icon: Sparkles },
-      { text: "Me Gustas & Conexiones Diarias", icon: Heart },
-      { text: "Chat Directo con tus Matches", icon: MessageSquare },
-      { text: "Filtros Básicos por Ubicación y Edad", icon: MapPin },
-      { text: "Verificación de Perfil de Seguridad", icon: ShieldCheck }
+      { text: "360° Complete Profile Creation", icon: Activity },
+      { text: "Affinity Matching Algorithm", icon: Sparkles },
+      { text: "Daily Likes & Connections", icon: Heart },
+      { text: "Direct Chat with your Matches", icon: MessageSquare },
+      { text: "Basic Location & Age Filters", icon: MapPin },
+      { text: "Safety Profile Verification", icon: ShieldCheck }
     ],
     href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24",
-    buttonText: "Encontrar mi Pareja ahora",
+    buttonText: "Find my Partner now",
     highlighted: false,
     glowColor: "bg-white/20",
-    tag: "Plan Inicial",
-    tagColor: "bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca]"
+    tag: "Initial Plan",
+    tagColor: "bg-transparent border-l border-b border-white/20 text-white font-semibold"
   },
   {
-    title: "Match Dating Pro",
-    subtitle: "La experiencia ilimitada con máxima visibilidad y funciones avanzadas de citas.",
+    title: "Klick Pro",
+    subtitle: "The unlimited experience with maximum visibility and advanced dating features.",
     features: [
-      { text: "Todo lo incluido en Match Dating", icon: CheckCircle2 },
-      { text: "Me Gustas e Interacciones Ilimitadas", icon: Zap },
-      { text: "Ver a quién le gustas antes de hacer Match", icon: Search },
-      { text: "Filtros Avanzados de Estilo de Vida y Valores", icon: ClipboardCheck },
-      { text: "Boost Semanal de Visibilidad de Perfil", icon: Sparkles },
-      { text: "Rebobinados Ilimitados para no perder oportunidades", icon: Clock },
-      { text: "Modo Incógnito & Control de Privacidad Total", icon: ShieldCheck },
-      { text: "Soporte & Matchmaking Personalizado", icon: Users }
+      { text: "Everything included in Klick", icon: CheckCircle2 },
+      { text: "Unlimited Likes & Interactions", icon: Zap },
+      { text: "See who likes you before connecting", icon: Search },
+      { text: "Advanced Lifestyle & Values Filters", icon: ClipboardCheck },
+      { text: "Weekly Profile Visibility Boost", icon: Sparkles },
+      { text: "Unlimited Rewinds so you never miss an opportunity", icon: Clock },
+      { text: "Incognito Mode & Total Privacy Control", icon: ShieldCheck },
+      { text: "Personalized Matchmaking & Support", icon: Users }
     ],
     href: "https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24",
-    buttonText: "Encontrar mi Pareja ahora",
+    buttonText: "Find my Partner now",
     highlighted: true,
     glowColor: "bg-white/20",
-    tag: "¡Más Popular!",
-    tagColor: "bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca]"
+    tag: "Most Popular!",
+    tagColor: "bg-transparent border-l border-b border-white/20 text-white font-semibold"
   }
 ];
 
@@ -72,10 +72,10 @@ export default function ChooseYourPath() {
         {/* Header Centrado Simplificado */}
         <div className="mb-12 md:mb-20 max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-white leading-tight mb-4">
-            Elige tu Plan en Match Dating
+            Choose Your Plan on Klick
           </h2>
-          <p className="text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Selecciona la ruta ideal para tu objetivo. Herramientas y funciones exclusivas para conectar de forma auténtica y encontrar a tu pareja ideal.
+          <p className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed">
+            Select the ideal path for your goal. Exclusive tools and features to connect authentically and find your ideal partner.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function ChooseYourPath() {
 
                 {/* Floating Tag */}
                 {path.tag && (
-                  <div className={`absolute top-0 right-0 ${path.tagColor} text-white text-[10px] font-medium uppercase tracking-widest px-3 py-1.5 md:px-6 md:py-2 rounded-bl-3xl shadow-lg z-20 animate-pulse`}>
+                  <div className={`absolute top-0 right-0 ${path.tagColor} text-white text-[10px] font-medium uppercase tracking-widest px-3 py-1.5 md:px-6 md:py-2 rounded-bl-3xl shadow-lg z-20`}>
                     {path.tag}
                   </div>
                 )}
@@ -107,12 +107,12 @@ export default function ChooseYourPath() {
 
                 {/* CTA Button - Perfectly aligned across both cards */}
                 <div className="flex flex-col items-center gap-3 mt-2 mb-5 md:mb-8 w-full shrink-0">
-                  <a 
+                  <a
                     href={path.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => sendMetaEvent('Lead', { source: 'ChooseYourPath: ' + path.title })}
-                    className={`w-full py-2.5 md:py-3 rounded-full bg-transparent text-white font-normal text-base shadow-2xl hover:scale-[1.03] active:scale-95 transition-all duration-300 border border-white/40 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] text-center`} 
+                    className={`w-full py-2.5 md:py-3 rounded-full bg-[#1d61e7] text-white font-medium text-base shadow-lg hover:bg-[#1652c7] hover:scale-[1.03] active:scale-95 transition-all duration-300 border-0 text-center`}
                     aria-label={`Ir a ${path.title}`}
                   >
                     {path.buttonText}
@@ -120,7 +120,7 @@ export default function ChooseYourPath() {
                 </div>
 
                 <div className="space-y-4 md:space-y-5 flex-1">
-                  <p className="text-white font-normal text-xs uppercase tracking-widest opacity-50 mb-3 md:mb-5 text-center">¿Qué incluye el plan?</p>
+                  <p className="text-white font-normal text-xs uppercase tracking-widest opacity-50 mb-3 md:mb-5 text-center">What's included in this plan?</p>
                   {path.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start gap-3 text-slate-300 group/item cursor-default leading-loose">
                       <div className="mt-1.5 transition-transform group-hover/item:scale-110 shrink-0">

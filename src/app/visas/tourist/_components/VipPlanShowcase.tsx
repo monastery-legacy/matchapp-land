@@ -9,29 +9,29 @@ import { useRouter } from "next/navigation";
 const features = [
     {
         id: "vuelos",
-        title: "Vuelos y Traslados Internos",
-        description: "Logística aérea y terrestre incluida en todas tus rutas.",
+        title: "Flights & Domestic Transfers",
+        description: "Air and ground logistics included across all your routes.",
         icon: Plane,
         image: "/assets/generated/tourist_vip_showcase.png"
     },
     {
         id: "hospedaje",
-        title: "Hospedaje 4–5 Estrellas",
-        description: "Garantizamos el máximo confort en los mejores hoteles de cada ciudad.",
+        title: "4–5 Star Accommodations",
+        description: "Maximum comfort guaranteed in top hotels.",
         icon: Hotel,
         image: "/assets/generated/tourist_vip_showcase.png"
     },
     {
         id: "itinerario",
-        title: "Itinerario 15 Días - 14 Noches",
-        description: "Una inmersión total diseñada cronológicamente para tu deleite.",
+        title: "15-Day / 14-Night Itinerary",
+        description: "A complete curated journey designed for your enjoyment.",
         icon: Calendar,
         image: "/assets/generated/tourist_vip_showcase.png"
     },
     {
         id: "tickets",
-        title: "Actividades y Tickets Incluidos",
-        description: "Acceso total a las experiencias más exclusivas de tu ruta.",
+        title: "Activities & Tickets Included",
+        description: "Full access to exclusive experience tickets.",
         icon: Sparkles,
         image: "/assets/generated/tourist_vip_showcase.png"
     },
@@ -57,18 +57,18 @@ export default function VipPlanShowcase() {
                         {/* Text Content */}
                         <div className="mb-8">
                             <div className="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-white/10 text-slate-300 font-medium text-[9px] uppercase tracking-widest mb-4 border border-white/5">
-                                La Élite del Viajero
+                                The Elite Traveler Experience
                             </div>
                             <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tighter text-white leading-[1.1]">
-                                Libertad Sin Límites<br />
+                                Unlimited Freedom<br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca]">VIP EXPERIENCE</span>
                             </h2>
                             <div className="mt-4 space-y-2 max-w-sm">
                                 <p className="text-sm text-slate-300 font-normal leading-relaxed">
-                                    Elige tu gran ruta: Utah - Nevada - California | Miami - Orlando - Atlanta | New York - Boston - Washington DC.
+                                    Choose your itinerary: West Coast, East Coast, or Customized Global Destinations.
                                 </p>
                                 <p className="text-xs text-slate-400 font-normal leading-relaxed">
-                                    Para quienes no aceptan menos que la perfección. Un viaje épico diseñado bajo tus reglas con gestión integral 360°.
+                                    For those who expect perfection. An epic journey designed to your preferences with 360° dedicated support.
                                 </p>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ export default function VipPlanShowcase() {
                                                     <motion.div
                                                         initial={{ height: 0, opacity: 0 }}
                                                         animate={{ height: "auto", opacity: 1 }}
-                                                        exit={{ height: 0, opacity: 0 }}
+                                                        exit={{ height: "auto", opacity: 1 }}
                                                         transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
                                                         className="overflow-hidden pl-[2rem]"
                                                     >
@@ -119,17 +119,17 @@ export default function VipPlanShowcase() {
                         {/* Buttons moved to the bottom */}
                         <div className="mt-6 lg:mt-auto flex flex-col sm:flex-row gap-4 self-start w-full sm:w-auto">
                             <Button
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/80 hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                                 onClick={() => router.push('/instructions-payment-tourist?plan=vip')}
                             >
-                                Iniciar VIP Experience
+                                Start VIP Experience
                             </Button>
                             <Button
                                 asChild
-                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
+                                className="w-full sm:w-auto px-6 py-3 bg-transparent border border-white/40 text-white rounded-full hover:bg-white/10 hover:border-white/80 hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm font-medium"
                             >
                                 <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3X9M9IxjU-0QyoLH4nwKpy5WjuxDwM-KQC0QrZS_Mcri7IKWXEPWn4s5eOtySu9m_EFqZQgpv0" target="_blank" rel="noopener noreferrer">
-                                    Agendar reunión virtual
+                                    Schedule Virtual Meeting
                                 </a>
                             </Button>
                         </div>
@@ -162,7 +162,7 @@ export default function VipPlanShowcase() {
                     <div className="h-px w-12 bg-white/20" />
                     <p className="text-sm font-medium text-slate-400 flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
-                        Soporte exclusivo 24/7 incluido
+                        Exclusive 24/7 Support Included
                     </p>
                     <div className="h-px w-12 bg-white/20" />
                 </div>

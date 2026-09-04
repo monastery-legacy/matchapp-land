@@ -31,21 +31,21 @@ export default function BuyCtaSection() {
                             <Button
                                 size="lg"
                                 onClick={() => goToInstructions('basico')}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow]"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-white/10 hover:border-white/60"
                             >
                                 Plan Básico
                             </Button>
                             <Button
                                 size="lg"
                                 onClick={() => goToInstructions('premium')}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow]"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-white/10 hover:border-white/60"
                             >
                                 Plan Premium
                             </Button>
                             <Button
                                 size="lg"
                                 onClick={() => goToInstructions('vip')}
-                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow]"
+                                className="w-full sm:w-64 rounded-full py-4 font-medium text-lg shadow-xl transition-all duration-300 active:scale-95 hover:scale-105 border-2 bg-transparent text-white border-white/20 hover:bg-white/10 hover:border-white/60"
                             >
                                 Experiencia VIP
                             </Button>

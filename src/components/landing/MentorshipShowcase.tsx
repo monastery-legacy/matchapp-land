@@ -14,26 +14,26 @@ export default function MentorshipShowcase() {
                 <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-16 items-center lg:items-center">
                     
                     {/* Left Column: Text */}
-                    <div className="w-full lg:w-[30%] flex flex-col pt-2 lg:pt-4 pl-0 lg:pl-4">
-                        <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.1]">
-                            <span className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl block mb-2 font-medium">Matchmaking & Asesoría</span>
-                            <span className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-light">Conecta de forma transparente con guía experta</span>
+                    <div className="w-full lg:w-[35%] xl:w-[30%] flex flex-col pt-2 lg:pt-4 items-center lg:items-start text-center lg:text-left">
+                        <h2 className="font-normal tracking-tight text-black mb-6 leading-[1.15]">
+                            <span className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl block mb-2 font-medium">Matchmaking & Coaching</span>
+                            <span className="text-gray-500 text-xl sm:text-2xl lg:text-3xl font-light">Connect transparently with expert guidance</span>
                         </h2>
-                        <p className="text-gray-600 text-base leading-[1.7] font-light mb-8">
-                            Encontrar a la pareja adecuada requiere honestidad, claridad en tus metas e intereses compartidos. Nuestra asesoría de matchmaking te brinda herramientas prácticas para optimizar tu perfil, comunicar tu autenticidad y comprender la cultura de citas en diferentes partes del mundo.<br /><br />
-                            Aprende consejos para entablar conversaciones profundas, mantener citas seguras y transmitir confianza desde la primera interacción.
+                        <p className="text-gray-600 text-base leading-[1.7] font-light mb-8 max-w-xl lg:max-w-none">
+                            Finding the right partner requires honesty, clarity in your goals, and shared interests. Our matchmaking coaching provides you with practical tools to optimize your profile, communicate your authenticity, and understand dating culture in different parts of the world.<br /><br />
+                            Learn tips for engaging in deep conversations, having safe dates, and conveying confidence from the very first interaction.
                         </p>
-                        <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'MentorshipShowcase: Encontrar Pareja' })}>
-                           <Button className="mt-6 w-64 px-5 py-2.5 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] border border-[#2d1b4e] text-white rounded-full hover:[transition-property:transform,box-shadow] transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">Encontrar mi Pareja ahora</Button>
+                        <a href="https://chat.whatsapp.com/GVlnQKclJuP63qZjeE0r24" target="_blank" rel="noopener noreferrer" onClick={() => sendMetaEvent('Lead', { source: 'MentorshipShowcase: Encontrar Pareja' })} className="w-full sm:w-auto">
+                           <Button className="mt-2 w-full sm:w-64 px-5 py-2.5 bg-transparent border border-black text-black rounded-full hover:bg-black/10 transition-all flex justify-center items-center hover:scale-105 hover:shadow-lg text-sm">Find my Partner now</Button>
                         </a>
                     </div>
 
                     {/* Right Column: Video/Media */}
                     <div ref={containerRef} className="w-full lg:w-[70%] relative aspect-video bg-[#0a0a0a] rounded-3xl overflow-hidden shadow-2xl">
                         <InlineYouTubeFeature
-                            videoId="eIehK9fENJs"
-                            startSeconds={17}
-                            posterAlt="Matchmaking & Asesoría de Citas"
+                            videoId="5Dhn5ZkWJl4"
+                            startSeconds={1000}
+                            posterAlt="Matchmaking & Dating Coaching"
                             className="rounded-3xl w-full h-full"
                         />
                     </div>

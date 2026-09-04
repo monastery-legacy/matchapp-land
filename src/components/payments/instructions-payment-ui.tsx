@@ -37,8 +37,8 @@ export const instructionsPageClass = {
 
 export function LimitedTimeTag() {
   return (
-    <div className="absolute top-0 right-0 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] text-white text-[9px] font-medium uppercase tracking-widest px-3 py-1 rounded-bl-2xl shadow-lg z-20 pointer-events-none animate-pulse">
-      Por tiempo limitado
+    <div className="absolute top-0 right-0 bg-transparent border border-white/40 text-white text-[9px] font-medium uppercase tracking-widest px-3 py-1 rounded-bl-2xl shadow-lg z-20 pointer-events-none animate-pulse">
+      Limited Time Offer
     </div>
   );
 }

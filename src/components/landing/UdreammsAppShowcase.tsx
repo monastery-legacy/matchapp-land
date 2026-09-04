@@ -8,30 +8,30 @@ export default function UdreammsAppShowcase() {
             <div className="container px-6 md:px-12 mx-auto">
                 <div className="flex flex-col items-center text-center group">
                     <p className="text-white font-medium mb-6 tracking-tight uppercase text-sm md:text-base">
-                        Conecta con personas afines desde cualquier lugar
+                        Connect with like-minded people from anywhere
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 mb-8">
                         <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-white leading-none">
-                            Descarga
+                            Download
                         </h2>
                         <div className="w-16 h-16 md:w-24 md:h-24 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-500 overflow-hidden shrink-0">
                             <img
                                 src="/icons/new-icon-udreamms.png"
-                                alt="Match App Logo"
+                                alt="Klick Logo"
                                 className="w-full h-full object-cover"
                             />
                         </div>
                         <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-white leading-none">
-                            Match App
+                            Klick
                         </h2>
                     </div>
 
                     <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-white mb-10 leading-none">
-                        para encontrar pareja
+                        to find a partner
                     </h2>
 
                     <p className="text-lg md:text-xl text-white/60 font-medium mb-12 max-w-2xl tracking-tight">
-                        Utilizada por miles de personas que buscan conexiones auténticas, honestas y duraderas
+                        Used by thousands of people seeking authentic, honest, and lasting connections
                     </p>
 
                     {/* Clean Image Only */}
@@ -44,7 +44,7 @@ export default function UdreammsAppShowcase() {
                     >
                         <img
                             src="/5297951-7905525-Photoroom.png"
-                            alt="Descarga Match App"
+                            alt="Download Klick"
                             className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto object-contain transition-transform duration-300 hover:scale-105"
                         />
                     </a>

@@ -11,31 +11,31 @@ export interface ProductCatalogEntry {
 
 export const PRODUCT_CATALOG: Record<string, ProductCatalogEntry> = {
   'curso-estudiante': {
-    name: 'Master class express - Visa de Estudiante F-1',
+    name: 'Express Masterclass - F-1 Student',
     cardPriceUsd: 9.99,
     cryptoPriceUsd: 9.99,
     stripePaymentLink: null,
   },
   'libro-estudiante': {
-    name: 'Libro Digital - Visa de Estudiante F-1',
+    name: 'Digital Book - F-1 Student',
     cardPriceUsd: 29.99,
     cryptoPriceUsd: 29.99,
     stripePaymentLink: 'https://buy.stripe.com/bJeeVdckP87851w2HxenS0D',
   },
   'curso-turista': {
-    name: 'Master class express - Visa de Turista B-2',
+    name: 'Express Masterclass - B-2 Tourist',
     cardPriceUsd: 9.99,
     cryptoPriceUsd: 9.99,
     stripePaymentLink: null,
   },
   'libro-turista': {
-    name: 'Libro Digital - Visa de Turista B-2',
+    name: 'Digital Book - B-2 Tourist',
     cardPriceUsd: 29.99,
     cryptoPriceUsd: 29.99,
     stripePaymentLink: 'https://buy.stripe.com/bJeeVdckP87851w2HxenS0D',
   },
   'plan-esencial': {
-    name: 'Plan 1: Esencial - F-1',
+    name: 'Plan 1: Essential - F-1',
     cardPriceUsd: 380,
     cryptoPriceUsd: 299.99,
     stripePaymentLink: 'https://buy.stripe.com/6oU14n84zcnoalQci7enS0F',
@@ -59,19 +59,19 @@ export const PRODUCT_CATALOG: Record<string, ProductCatalogEntry> = {
     stripePaymentLink: 'https://buy.stripe.com/bJeeVddoTafgeC695VenS0I',
   },
   'plan-turista-basico': {
-    name: 'Plan 1: Turista Básico - B-2',
+    name: 'Plan 1: Basic Tourist - B-2',
     cardPriceUsd: 380,
     cryptoPriceUsd: 299.99,
     stripePaymentLink: 'https://buy.stripe.com/6oU14n84zcnoalQci7enS0F',
   },
   'plan-turista-premium': {
-    name: 'Plan 2: Turista Premium - B-2',
+    name: 'Plan 2: Premium Tourist - B-2',
     cardPriceUsd: 3250,
     cryptoPriceUsd: null,
     stripePaymentLink: 'https://buy.stripe.com/9B67sL3OjafgalQ2HxenS0H',
   },
   'plan-turista-vip': {
-    name: 'Plan 3: Experiencia VIP - B-2',
+    name: 'Plan 3: VIP Experience - B-2',
     cardPriceUsd: 13000,
     cryptoPriceUsd: null,
     stripePaymentLink: 'https://buy.stripe.com/bJeeVddoTafgeC695VenS0I',

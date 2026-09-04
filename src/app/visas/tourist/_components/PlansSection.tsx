@@ -114,8 +114,8 @@ export default function PlansSection() {
 
                                     {/* Recommended Badge */}
                                     {plan.highlight && (
-                                        <div className="absolute top-0 right-1/2 translate-x-1/2 bg-gradient-to-r from-[#2d1b4e] to-[#9b4dca] text-white text-[10px] font-medium uppercase tracking-widest px-6 py-1.5 rounded-b-xl shadow-lg z-20">
-                                            MÁS POPULAR
+                                        <div className="absolute top-0 right-1/2 translate-x-1/2 bg-transparent border border-white/40 text-white text-[10px] font-medium uppercase tracking-widest px-6 py-1.5 rounded-b-xl shadow-lg z-20">
+                                            MOST POPULAR
                                         </div>
                                     )}
 
@@ -140,9 +140,9 @@ export default function PlansSection() {
                                         <Link 
                                             href={`/instructions-payment-tourist?plan=${plan.name.toLowerCase().split(" ").pop()?.normalize("NFD").replace(/[\u0300-\u036f]/g, "") || "basico"}`} 
                                             onClick={() => sendMetaEvent('InitiateCheckout', { content_name: plan.name, currency: 'USD', value: parseFloat(plan.price.replace('$', '').replace(',', '')) })}
-                                            className="w-full py-3 rounded-full bg-transparent text-white font-medium text-base shadow-2xl hover:scale-[1.03] active:scale-95 transition-all duration-300 border border-white/40 hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:text-white hover:border-[#2d1b4e] hover:[transition-property:transform,box-shadow] text-center flex items-center justify-center"
+                                            className="w-full py-3 rounded-full bg-transparent text-white font-medium text-base shadow-2xl hover:scale-[1.03] active:scale-95 transition-all duration-300 border border-white/40 hover:bg-white/10 hover:border-white/60 text-center flex items-center justify-center"
                                         >
-                                            Elegir Plan
+                                            Choose Plan
                                         </Link>
                                     </div>
 

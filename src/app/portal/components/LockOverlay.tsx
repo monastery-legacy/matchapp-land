@@ -55,7 +55,7 @@ export default function LockOverlay({ itemId }: LockOverlayProps) {
                 router.push(isTourist ? '/portal/visa-turista' : '/portal/visa-estudiante');
                 toast.info("Por favor, selecciona y añade un plan al carrito para desbloquear tu proceso de asesoría.");
               }}
-              className="w-full h-10 md:h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
+              className="w-full h-10 md:h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
             >
               <Briefcase className="w-4 h-4" />
               Elegir Plan de Asesoría
@@ -71,7 +71,7 @@ export default function LockOverlay({ itemId }: LockOverlayProps) {
           ) : (
             <Button
               onClick={() => addToCart(itemId)}
-              className="w-full h-10 md:h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-gradient-to-r hover:from-[#2d1b4e] hover:to-[#9b4dca] hover:border-[#2d1b4e] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
+              className="w-full h-10 md:h-12 rounded-full bg-transparent border border-white/40 text-white hover:bg-white/10 hover:border-white/60 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg text-xs font-normal tracking-widest uppercase flex items-center justify-center gap-2"
             >
               Añadir al carrito
             </Button>

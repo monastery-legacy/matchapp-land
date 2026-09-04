@@ -44,59 +44,59 @@ type MenuItemData = {
 // --- DATA DEL MENÚ ---
 const menuData: MenuItemData[] = [
   {
-    label: "Descubrir",
+    label: "Discover",
     href: "/#descubrir",
     megaMenu: {
-      title: "Descubrir Match Dating",
-      description: "Información sobre cómo funciona la plataforma y el algoritmo de emparejamiento.",
-      actionText: "Conocer más",
+      title: "Discover Klick",
+      description: "Learn how the platform and matching algorithm work.",
+      actionText: "Learn more",
       actionHref: "/#descubrir",
       items: [
-        { title: "Algoritmo de emparejamiento", desc: "Compatibilidad inteligente basada en afinidades e intereses reales", href: "/#descubrir", icon: Sparkles, colorClass: "text-[#9b4dca] bg-[#9b4dca]/10" },
-        { title: "Cómo funciona la plataforma", desc: "Paso a paso para crear tu perfil y encontrar coincidencias", href: "/#descubrir", icon: Compass, colorClass: "text-pink-400 bg-pink-500/10" }
+        { title: "Matching Algorithm", desc: "Smart compatibility based on real affinities and interests", href: "/#descubrir", icon: Sparkles, colorClass: "text-[#9b4dca] bg-[#9b4dca]/10" },
+        { title: "How the Platform Works", desc: "Step-by-step to create your profile and find matches", href: "/#descubrir", icon: Compass, colorClass: "text-pink-400 bg-pink-500/10" }
       ]
     }
   },
   {
-    label: "Historias de éxito",
+    label: "Success Stories",
     href: "/#historias",
     megaMenu: {
-      title: "Historias de Éxito",
-      description: "Testimonios y casos reales para transmitir confianza.",
-      actionText: "Ver testimonios",
+      title: "Success Stories",
+      description: "Real testimonials and cases to build trust.",
+      actionText: "View testimonials",
       actionHref: "/#historias",
       items: [
-        { title: "Testimonios reales", desc: "Conoce a parejas que se encontraron en nuestra plataforma", href: "/#historias", icon: Heart, colorClass: "text-rose-400 bg-rose-500/10" },
-        { title: "Casos de éxito", desc: "Experiencias verídicas de nuestra comunidad", href: "/#historias", icon: Trophy, colorClass: "text-amber-400 bg-amber-500/10" }
+        { title: "Real Testimonials", desc: "Meet couples who found each other on our platform", href: "/#historias", icon: Heart, colorClass: "text-rose-400 bg-rose-500/10" },
+        { title: "Success Cases", desc: "Authentic experiences from our community", href: "/#historias", icon: Trophy, colorClass: "text-amber-400 bg-amber-500/10" }
       ]
     }
   },
   {
-    label: "Seguridad",
+    label: "Safety",
     href: "/#seguridad",
     megaMenu: {
-      title: "Seguridad en Citas",
-      description: "Consejos de citas seguras y políticas de verificación de perfiles.",
-      actionText: "Ver políticas",
+      title: "Dating Safety",
+      description: "Safe dating advice and profile verification policies.",
+      actionText: "View policies",
       actionHref: "/#seguridad",
       items: [
-        { title: "Verificación de perfiles", desc: "Identidades autenticadas para una comunidad 100% real y confiable", href: "/#seguridad", icon: ShieldCheck, colorClass: "text-emerald-400 bg-emerald-500/10" },
-        { title: "Consejos de citas seguras", desc: "Recomendaciones y mejores prácticas para tus encuentros", href: "/#seguridad", icon: Lock, colorClass: "text-blue-400 bg-blue-500/10" }
+        { title: "Profile Verification", desc: "Authenticated identities for a 100% real and trustworthy community", href: "/#seguridad", icon: ShieldCheck, colorClass: "text-emerald-400 bg-emerald-500/10" },
+        { title: "Safe Dating Tips", desc: "Recommendations and best practices for your dates", href: "/#seguridad", icon: Lock, colorClass: "text-blue-400 bg-blue-500/10" }
       ]
     }
   },
   {
-    label: "Comunidad",
+    label: "Community",
     megaMenu: {
-      title: "Nuestra Comunidad",
-      description: "Únete a la red Match App y aprovecha beneficios exclusivos.",
-      actionText: "Unirme ahora",
+      title: "Our Community",
+      description: "Join the Klick network and enjoy exclusive benefits.",
+      actionText: "Join now",
       actionHref: "/contact",
       items: [
-        { title: "Match App", desc: "Todo en tu bolsillo", href: "/portal", icon: LayoutGrid, colorClass: "text-pink-400 bg-pink-500/10" },
-        { title: "Referidos", desc: "Gana $50 por amigo", href: "/referrals", icon: Gift, colorClass: "text-emerald-400 bg-emerald-500/10" },
-        { title: "Instituciones Educativas", desc: "Alianzas estratégicas", href: "/partnerships", icon: Building2, colorClass: "text-indigo-400 bg-indigo-500/10" },
-        { title: "Embajadores", desc: "Representa a Match App", href: "/contact", icon: Users, colorClass: "text-amber-400 bg-amber-500/10" },
+        { title: "Klick", desc: "Everything in your pocket", href: "/portal", icon: LayoutGrid, colorClass: "text-pink-400 bg-pink-500/10" },
+        { title: "Referrals", desc: "Earn $50 per friend", href: "/referrals", icon: Gift, colorClass: "text-emerald-400 bg-emerald-500/10" },
+        { title: "Educational Institutions", desc: "Strategic partnerships", href: "/partnerships", icon: Building2, colorClass: "text-indigo-400 bg-indigo-500/10" },
+        { title: "Ambassadors", desc: "Represent Klick", href: "/contact", icon: Users, colorClass: "text-amber-400 bg-amber-500/10" },
       ],
       socials: [
         { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61593817282601", imgSrc: "/assets/f.jpg" },
@@ -156,9 +156,9 @@ export default function Header() {
           <div className="flex items-center gap-4 lg:gap-12 h-full">
             <Link href="/" className="flex items-center gap-2 z-50 shrink-0 group">
               <div className="w-7 h-7 relative transition-transform duration-300 group-hover:scale-110">
-                <img src="/matchapp-logo-circular.png" alt="Match Dating" className="object-cover w-full h-full rounded-full drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
+                <img src="/matchapp-logo-circular.png" alt="Klick" className="object-cover w-full h-full rounded-full drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
               </div>
-              <span className="text-lg font-medium tracking-tight text-white group-hover:text-white transition-colors">Match Dating</span>
+              <span className="text-lg font-medium tracking-tight text-white group-hover:text-white transition-colors">Klick</span>
             </Link>
 
             {/* DESKTOP NAV - Ocultar en landings de visa */}
@@ -201,7 +201,7 @@ export default function Header() {
 
             <Link href="/login">
               <Button className="bg-white text-black hover:bg-white/90 rounded-full h-8 px-4 font-semibold text-xs transition-all duration-300 hover:scale-105 shadow-md">
-                Comenzar
+                Get Started
               </Button>
             </Link>
           </div>
@@ -284,7 +284,7 @@ export default function Header() {
                         {/* COL 3: SOCIALS (2 cols - Only if they exist) */}
                         {item.megaMenu.socials && (
                           <div className="col-span-2 pl-2 flex flex-col justify-center">
-                            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-gray-500 mb-6 block">Síguenos</span>
+                            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-gray-500 mb-6 block">Follow Us</span>
                             <div className="flex flex-col gap-4">
                               {item.megaMenu.socials.map((social, idx) => (
                                 <a
@@ -332,7 +332,7 @@ export default function Header() {
           >
             <div className="p-6">
               <div className="flex justify-between items-center mb-8">
-                <span className="text-xl font-medium text-white">Menú</span>
+                <span className="text-xl font-medium text-white">Menu</span>
                 <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-white bg-white/10 rounded-full">
                   <X />
                 </button>
@@ -391,7 +391,7 @@ export default function Header() {
                   <div>
                     <Link href="/login" onClick={() => setIsMobileMenuOpen(false)} className="w-full block">
                       <Button className="w-full bg-white text-black hover:bg-white/90 h-12 text-sm font-semibold rounded-xl">
-                        Comenzar
+                        Get Started
                       </Button>
                     </Link>
                   </div>

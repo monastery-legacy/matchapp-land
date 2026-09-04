@@ -9,23 +9,23 @@ import { motion } from "framer-motion";
 const AboutPage = () => {
   const values = [
     {
-      category: "Valor Central",
-      title: "Transparencia.",
-      description: "Información veraz y honesta sobre cada paso de tu proceso académico en USA.",
+      category: "Core Value",
+      title: "Transparency.",
+      description: "Truthful and honest information on every step of your academic process in the US.",
       icon: Shield,
       color: "text-blue-500"
     },
     {
-      category: "Prioridad",
-      title: "Excelencia.",
-      description: "Estrategias personalizadas para asegurar tu éxito en las instituciones más prestigiosas.",
+      category: "Priority",
+      title: "Excellence.",
+      description: "Personalized strategies to ensure your success at prestigious institutions.",
       icon: Target,
       color: "text-purple-500"
     },
     {
-      category: "Visión",
-      title: "Empatía.",
-      description: "Entendemos el reto de dejar tu país y te acompañamos con cercanía humana.",
+      category: "Vision",
+      title: "Empathy.",
+      description: "We understand the challenge of leaving your country and guide you with human warmth.",
       icon: Heart,
       color: "text-rose-500"
     }
@@ -55,8 +55,8 @@ const AboutPage = () => {
                 transition={{ delay: 0.1 }}
                 className="text-6xl md:text-8xl font-medium text-[#1d1d1f] tracking-tighter leading-[0.9] mb-8"
               >
-                Más que asesoría. <br />
-                Un plan de vida.
+                More than guidance. <br />
+                A life plan.
               </motion.h1>
 
               <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
@@ -66,7 +66,7 @@ const AboutPage = () => {
                   transition={{ delay: 0.2 }}
                   className="text-xl md:text-2xl text-[#86868b] font-medium max-w-3xl leading-relaxed"
                 >
-                  Match App LLC es el puente entre el talento internacional y las oportunidades académicas en Estados Unidos, eliminando barreras con honestidad y estrategia.
+                  Klick LLC is the bridge between international talent and academic opportunities in the United States, removing barriers with honesty and strategy.
                 </motion.p>
                 <motion.a
                   initial={{ opacity: 0 }}
@@ -75,7 +75,7 @@ const AboutPage = () => {
                   href="/contact"
                   className="text-primary font-medium text-lg hover:underline decoration-2 underline-offset-4 flex items-center gap-1 group whitespace-nowrap"
                 >
-                  Inicia tu proceso ahora <span className="group-hover:translate-x-1 transition-transform">›</span>
+                  Start your process now <span className="group-hover:translate-x-1 transition-transform">›</span>
                 </motion.a>
               </div>
             </div>
@@ -125,10 +125,10 @@ const AboutPage = () => {
             >
               <div className="max-w-4xl text-left">
                 <span className="text-xs font-medium text-[#86868b] uppercase tracking-[0.2em] mb-4 block">
-                  Nuestro Compromiso
+                  Our Commitment
                 </span>
                 <h3 className="text-4xl md:text-8xl font-medium text-[#1d1d1f] mb-12 tracking-tighter leading-[0.9]">
-                  Expertos que operan <br /> directamente desde USA.
+                  Experts operating <br /> directly from the USA.
                 </h3>
 
                 <div className="grid md:grid-cols-2 gap-16 mt-16">
@@ -136,9 +136,9 @@ const AboutPage = () => {
                     <div className="w-14 h-14 bg-[#F5F5F7] rounded-2xl flex items-center justify-center mb-6">
                       <Shield className="w-7 h-7 text-[#1d1d1f]" />
                     </div>
-                    <h4 className="text-2xl font-medium text-[#1d1d1f] mb-4 tracking-tight">Transparencia Radical</h4>
+                    <h4 className="text-2xl font-medium text-[#1d1d1f] mb-4 tracking-tight">Radical Transparency</h4>
                     <p className="text-[#86868b] text-lg font-medium leading-relaxed">
-                      Match App LLC es una empresa privada. No somos agentes gubernamentales, por eso te garantizamos información honesta y sin tecnicismos confusos sobre tu visa y admisión.
+                      Klick LLC is a private company. We are not government agents, which is why we guarantee honest information without confusing jargon about your visa and admission.
                     </p>
                   </div>
 
@@ -146,9 +146,9 @@ const AboutPage = () => {
                     <div className="w-14 h-14 bg-[#F5F5F7] rounded-2xl flex items-center justify-center mb-6">
                       <GraduationCap className="w-7 h-7 text-[#1d1d1f]" />
                     </div>
-                    <h4 className="text-2xl font-medium text-[#1d1d1f] mb-4 tracking-tight">Foco en tu Futuro</h4>
+                    <h4 className="text-2xl font-medium text-[#1d1d1f] mb-4 tracking-tight">Focus on Your Future</h4>
                     <p className="text-[#86868b] text-lg font-medium leading-relaxed">
-                      Fomentamos un sentido de pertenencia en nuestra comunidad de estudiantes, dándote las herramientas necesarias para que tu transición a la vida americana sea fluida.
+                      We foster a sense of belonging in our student community, giving you the necessary tools for a smooth transition to American life.
                     </p>
                   </div>
                 </div>
@@ -172,16 +172,16 @@ const AboutPage = () => {
               </motion.div>
 
               <span className="text-[#1d1d1f] font-medium tracking-tight text-xl mb-4 block">
-                Tu Futuro
+                Your Future
               </span>
 
               <h2 className="text-6xl md:text-8xl font-medium text-[#1d1d1f] tracking-tighter leading-[0.9] mb-10">
-                Los sueños grandes <br />
-                requieren planes sólidos.
+                Big dreams <br />
+                require solid plans.
               </h2>
 
               <p className="text-xl md:text-2xl text-[#86868b] mb-12 font-medium max-w-2xl leading-relaxed">
-                Construyamos juntos el mapa hacia tu éxito profesional en los Estados Unidos.
+                Let's build together the roadmap to your professional success in the United States.
               </p>
 
               <motion.button
@@ -189,7 +189,7 @@ const AboutPage = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-14 py-7 rounded-full bg-[#1d1d1f] text-white font-medium text-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all"
               >
-                Empezar ahora
+                Start Now
               </motion.button>
             </motion.div>
           </div>
